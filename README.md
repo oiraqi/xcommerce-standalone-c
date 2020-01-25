@@ -48,7 +48,7 @@ This project is about developing such a computer program (Telecommerce Applicati
 
 For each algorithm above (1.1 through 1.5):
 - Identify constants, variables and the most appropriate type of each variable
-- Translate the algorithm a C program
+- Translate the algorithm to a C program
 - Compile it
 - Test it
 - Share it
