@@ -21,7 +21,10 @@ This project is about developing the Telecommerce Application for Intergalactic 
 1.1. We start by considering a single-product catalog. Each customer calls and specifies the quantiy of the product (the only product available) s/he wants to order. The operator shall use the Telecommerce Application to compute the total price.
 - Identify the problem input and output
 - Design the algorithm and express it as a flow chart
-1.2. 
+
+1.2. In addition to the total price, the operator needs to compute the VAT too (20%)
+- Update the problem input and output
+- Enhance your algorithm and corresponding flow chart
 
 ## Milestone 2
 *Prerequisites*
