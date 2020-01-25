@@ -4,7 +4,7 @@ Welcome to the Telecommerce Application: a holistic and incremental project deve
 ## Overview
 Intergalactic Ltd. makes a catalog of its products available both online (on its website) and offline (printed format). Customers browse the catalog (online or offline), and call Intergalactic to order selected products (hence *Tele*commerce). An Intergalactic employee answers calls, receives and processes orders.
 
-As orders have been steadily growing, Intergalactic has realized that it needs a computer program to allow its employee process calls faster and without errors. As a matter of fact, not only is the process too slow increasing the number of lost customers, but it is also affected by human errors: frequent errors in calculating total price, discount and VAT, other errors were related to stock management, etc.
+As orders have been steadily growing, Intergalactic has realized that it needs a computer program to allow its employee process calls faster and without errors. As a matter of fact, not only has the process been too slow increasing the number of lost customers, but it has also been affected by human errors: frequent errors in calculating total price, discount and VAT, other errors were related to stock management, etc.
 
 This project is about developing such a computer program (Telecommerce Application) for Intergalactic company.
 
