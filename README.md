@@ -1,5 +1,7 @@
-# XCommerce Standalone - C
-This is the telecommerce application, developed in C programming language. It is used by a call center operator on behalf of calling customers.
+# Telecommerce Application
+
+## Overview
+Welcome to the Telecommerce Application, developed in C programming language. It is used by a call center operator on behalf of calling customers.
 
 ## ILOs
 1. Recognize the importance of computer programming in modern society
