@@ -18,7 +18,7 @@ This project is about developing such a computer program (Telecommerce Applicati
 - Explain the purpose of a C program that is written by others, and analyze whether it compiles and runs successfully
 
 ## Milestone 1 (Basic specifications, algorithms only)
-1.1. We start by considering a single-product catalog. Each customer calls and specifies the quantity of the product (the only one available) s/he wants to order. The operator shall use the Telecommerce Application to compute the total price.
+1.1. We start by considering a **single-product** catalog. Each customer calls and specifies the quantity of the product (the only one available) s/he wants to order. The operator shall use the Telecommerce Application to compute the total price.
 - Identify the problem input and output
 - Design the algorithm and express it as a flow chart
 
@@ -32,7 +32,7 @@ This project is about developing such a computer program (Telecommerce Applicati
 - Identify the problem input and output
 - Design the algorithm and express it as a flow chart
 
-1.5. We still consider a three-product catalog. However, a customer may call and specify one or more products to order, along with their respective quantities. The customer can specify the same product many times, e.g. 3 x Product1, 2 x Product2, 1 x Product1
+1.5. We still consider a three-product catalog. However, a customer may call and specify one or more products to order, along with their respective quantities.  The customer can specify the same product many times, e.g. 3 x Product1, then 2 x Product2, then 1 x Product1.
 
 ## Milestone 2
 *Prerequisites*
