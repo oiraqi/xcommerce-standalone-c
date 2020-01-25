@@ -26,7 +26,7 @@ This project is about developing such a computer program (Telecommerce Applicati
 - Update the problem input and output
 - Enhance your algorithm and corresponding flow chart
 
-1.3. We add now a **constraint**. When the customer calls and specifies the quantity to order, the Telecommerce Application shall check first the availability of the product, compute the total price and VAT if and only the orderd quantiy is available, or give an error message otherwise ("Orderd quantity unavailable").
+1.3. We add now a **constraint**. When the customer calls and specifies the quantity to order, the Telecommerce Application shall check first the availability of the product, compute the total price and VAT if and only if the orderd quantiy is available, or give an error message otherwise ("Orderd quantity unavailable").
 
 1.4. We consider now a **three-produc**t catalog. Each product has its own price. A customer can call and specify one (and only one) product to order, along with the desired quantity. The operator shall use the Telecommerce Application to compute the total price, as well as the VAT if and only if the ordered quantity of the selected product is available, or give an error message otherwise ("Ordered quantity uavailable").
 - Identify the problem input and output
