@@ -30,6 +30,7 @@ This project is about developing the Telecommerce Application for Intergalactic 
 
 ## Milestone 1 (Basic specifications, algorithms only)
 1.1. We start by considering a single-product catalog. Each customer calls and specifies the quantiy of the product (the only product available) s/he wants to order. The operator shall use the Telecommerce Application to compute the total price.
+
 *=> Identify the input, the output and the necessary instructions*
 
 ## Milestone 2
