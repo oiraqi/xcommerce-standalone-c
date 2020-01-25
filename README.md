@@ -1,5 +1,5 @@
 # Telecommerce Application
-Welcome to the Telecommerce Application: a holistic and incremental project developed in, and showcasing the C programming language.
+Welcome to the Telecommerce Application: a holistic and incremental project developed in, and showcasing the C programming language. Telecommerce Application is part of the overarching [XCommerce](https://github.com/oiraqi/xcommerce) meta-project.
 
 ## Overview
 Intergalactic Ltd. makes a catalog of its products available both online (on its website) and offline (printed format). Customers browse the catalog (online or offline), and call Intergalactic to order selected products (hence *Tele*commerce). An Intergalactic employee answers calls, receives and processes orders.
@@ -31,6 +31,8 @@ This project is about developing the Telecommerce Application for Intergalactic 
 - Git installed
 - Gcc (MinGW for Windows) installed
 - VS Code installed
+
+*Starting Point*
 - git clone https://github.com/oiraqi/xcommerce-standalone-c.git
 - cd xcommerce-standalone-c
 - code .
@@ -41,6 +43,3 @@ This project is about developing the Telecommerce Application for Intergalactic 
 ## Milestone 4
 
 ## Milestone 5 
-
-## Parent Project
-Telecommerce Application is part of the overarching [XCommerce](https://github.com/oiraqi/xcommerce) project, which contains other projects that you may work on in the upcoming years.
