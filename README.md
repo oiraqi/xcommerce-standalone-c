@@ -26,11 +26,13 @@ This project is about developing such a computer program (Telecommerce Applicati
 - Update the problem input and output
 - Enhance your algorithm and corresponding flow chart
 
-1.3. We consider now a three-product catalog. Each product has its own price. A customer can call and specify one (and only one) product to order, along with the desired quantity. The operator shall use the Telecommerce Application to compute the total price, as well as the VAT.
+1.3. We add now a constraint. When the customer calls and specifies the quantity to order, the Telecommerce Application shall check first the availability of the product, compute the total price and VAT if and only the orderd quantiy is available, or give an error message otherwise ("Orderd quantity unavailable").
+
+1.4. We consider now a three-product catalog. Each product has its own price. A customer can call and specify one (and only one) product to order, along with the desired quantity. The operator shall use the Telecommerce Application to compute the total price, as well as the VAT if and only if the ordered quantity of the selected product is available, or give an error message otherwise ("Ordered quantity uavailable").
 - Identify the problem input and output
 - Design the algorithm and express it as a flow chart
 
-1.4. We still consider a three-product catalog. However, a customer may call and specify one or more products to order, along with their respective quantities. The customer can specify the same product many times, e.g. 3 x Product1, 2 x Product2, 1 x Product1
+1.5. We still consider a three-product catalog. However, a customer may call and specify one or more products to order, along with their respective quantities. The customer can specify the same product many times, e.g. 3 x Product1, 2 x Product2, 1 x Product1
 
 ## Milestone 2
 *Prerequisites*
@@ -50,8 +52,20 @@ This project is about developing such a computer program (Telecommerce Applicati
 
 2.3. Translate the algorithm of 1.3. to a C program, compile it, test it and share it
 
-## Milestone 3
+2.4. Translate the algorithm of 1.3. to a C program, compile it, test it and share it
 
-## Milestone 4
+2.5. Translate the algorithm of 1.3. to a C program, compile it, test it and share it
 
-## Milestone 5 
+## Milestone 3 (More specifications: discounts, shipping cost based on ordered products weight, top-down approach)
+
+## Milestone 4 (Multi-product catalog, arrays)
+
+## Milestone 5 (Product names, customer info, order orinting, strings)
+
+## Milestone 6 (Better memory usage, pointers)
+
+## Milestone 7 (Better encapsulation, user-defined types)
+- typedef {...} product_t;
+- typedef {...} order_t;
+
+## Milestone 8 (Order logging, files)
