@@ -17,13 +17,6 @@ This project is about developing the Telecommerce Application for Intergalactic 
 - Apply various features of C programming including pointers, arrays and strings, and ultimately user-defined data types and files
 - Explain the purpose of a C program that is written by others, and analyze whether it compiles and runs successfully
 
-## Milestones
-- **Milestone 1 -- Basic specifications, algorithms only**: We consider a single-product catalog and order.
-- **Milestone 2**: 
-- **Milestone 3**: 
-- **Milestone 4**: 
-- **Milestone 5**: 
-
 ## Starting point
 - git clone https://github.com/oiraqi/xcommerce-standalone-c.git
 - cd xcommerce-standalone-c
@@ -34,6 +27,18 @@ This project is about developing the Telecommerce Application for Intergalactic 
 - Git installed
 - Gcc (MinGW for Windows) installed
 - VS Code installed
+
+## Milestone 1 (Basic specifications, algorithms only)
+1.1. We start by considering a single-product catalog. Each customer calls and specifies the quantiy of the product (the only product available) s/he wants to order. The operator shall use the Telecommerce Application to compute the total price.
+*=> Identify the input, the output and the necessary instructions*
+
+## Milestone 2
+
+## Milestone 3
+
+## Milestone 4
+
+## Milestone 5 
 
 ## Parent Project
 Telecommerce Application is part of the overarching [XCommerce](https://github.com/oiraqi/xcommerce) project, which contains other projects that you may work on in the upcoming years.
