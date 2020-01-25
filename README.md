@@ -4,9 +4,9 @@ Welcome to the Telecommerce Application: a holistic and incremental project deve
 ## Overview
 Intergalactic Ltd. makes a catalog of its products available both online (on its website) and offline (printed format). Customers browse the catalog (online or offline), and call Intergalactic to order selected products (hence *Tele*commerce). An Intergalactic employee answers calls, receives and processes orders.
 
-As orders have been steadily growing, Intergalactic has realized that it needs a program (Telecommerce Application) to allow its employee process calls faster and without making errors. As a matter of fact, not only was the process too slow increasing the number of lost customers, but it was also affected by human errors: frequent errors in calculating total price, discount and VAT, other errors were related to specifying the shipping address, etc.
+As orders have been steadily growing, Intergalactic has realized that it needs a program (Telecommerce Application) to allow its employee process calls faster and without errors. As a matter of fact, not only was the process too slow increasing the number of lost customers, but it was also affected by human errors: frequent errors in calculating total price, discount and VAT, other errors were related to stock management, etc.
 
-This project is about devloping the Telecommerce Application for Intergalactic company.
+This project is about developing the Telecommerce Application for Intergalactic company.
 
 ## ILOs
 - Apply the algorithmic thinking and approach in problem-solving, and be able to express algorithms using pseudo code and flow charts
@@ -18,7 +18,7 @@ This project is about devloping the Telecommerce Application for Intergalactic c
 - Explain the purpose of a C program that is written by others, and analyze whether it compiles and runs successfully
 
 ## Milestones
-- **Milestone 1**: 
+- **Milestone 1 -- Basic specifications, algorithms only**: We consider a single-product catalog and order.
 - **Milestone 2**: 
 - **Milestone 3**: 
 - **Milestone 4**: 
