@@ -57,7 +57,7 @@ For each algorithm above (1.1 through 1.5):
 
 ## Milestone 4 (Multi-product catalog, arrays)
 
-## Milestone 5 (Product names, customer info, order orinting, strings)
+## Milestone 5 (Product names, customer info, order printing, name-like search, strings)
 
 ## Milestone 6 (Better memory usage, pointers)
 
