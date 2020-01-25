@@ -46,15 +46,12 @@ This project is about developing such a computer program (Telecommerce Applicati
 - code .
 - There you go!
 
-2.1. Translate the algorithm of 1.1. to a C program, compile it, test it and share it
-
-2.2. Translate the algorithm of 1.2. to a C program, compile it, test it and share it
-
-2.3. Translate the algorithm of 1.3. to a C program, compile it, test it and share it
-
-2.4. Translate the algorithm of 1.3. to a C program, compile it, test it and share it
-
-2.5. Translate the algorithm of 1.3. to a C program, compile it, test it and share it
+For each algorithm above (1.1 through 1.5):
+- Identify constants, variables and the most appropriate type of each variable
+- Translate the algorithm a C program
+- Compile it
+- Test it
+- Share it
 
 ## Milestone 3 (More specifications: discounts, shipping cost based on ordered products weight, top-down approach)
 
