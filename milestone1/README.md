@@ -3,7 +3,7 @@
 ![](images/1_1_a.jpg)
 
 ## Second alternative (Product price is a constant)
-![](images/1_1_a.jpg)
+![](images/1_1_b.jpg)
 
 # 1.2
 ## First alternative
