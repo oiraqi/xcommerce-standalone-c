@@ -13,3 +13,6 @@
 
 # 1.4
 ![](images/TCA_1_4.png)
+
+# 1.5
+![](images/TCA_1_5.png)
