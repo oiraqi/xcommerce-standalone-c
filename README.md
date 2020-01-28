@@ -17,6 +17,10 @@ This project is about developing such a computer program (Telecommerce Applicati
 - Apply various features of C programming including pointers, arrays and strings, and ultimately user-defined data types and files
 - Explain the purpose of a C program that is written by others, and analyze whether it compiles and runs successfully
 
+## Related Material
+- [Introduction to Computer Programming](https://docs.google.com/presentation/d/1kbHYSNY1zxqZXxcYxdkfULK5dRZ42IeiKI_z0pE6SN0/edit?usp=sharing)
+- [Algorithms](https://docs.google.com/presentation/d/1oe6NSNcz9tKE_XYgdV7bV7XLiNyn81HFcYLmKn1ECaw/edit?usp=sharing)
+
 ## Milestone 1 (Basic specifications, algorithms only)
 1.1. We start by considering a **single-product** catalog. Each customer calls and specifies the quantity of the product (the only one available) s/he wants to order. The operator shall use the Telecommerce Application to compute the total price.
 - Identify the problem input and output
