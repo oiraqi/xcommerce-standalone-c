@@ -6,4 +6,8 @@
 ![](images/1_1_a.jpg)
 
 # 1.2
-![](images/1_2.jpg)
+## First alternative
+![](images/1_2_a.jpg)
+
+## Second alternative
+![](images/1_2_b.jpg)
