@@ -31,7 +31,7 @@ int main() {
      * memorized in the left-side variable (total_price) of the = symbol.
      * We also say that the result, of the expression evaluation, is assigned to total_price.
      * In this sense, the = symbol is also called the assignment operator. It assigns the
-     * value of its right-side to the variable on its let-side.
+     * value of its right-side to the variable on its left-side.
      */
     total_price = price * quantity;
     /**
