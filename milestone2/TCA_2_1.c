@@ -32,12 +32,14 @@ int main() {
      * We also say that the result, of the expression evaluation, is assigned to total_price.
      * In this sense, the = symbol is also called the assignment operator. It assigns the
      * value of its right-side to the variable on its let-side.
+     */
+    total_price = price * quantity;
+    /**
      * To check the equality between two values, we rather use the == operator.
      * Ex: a == b
      * This is a logical expression that checks whether the value of the variable a is
      * equal to the value of the variable b, without affecting/changing any of the values.
      */
-    total_price = price * quantity;
 
     return 0;
 }
