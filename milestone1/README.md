@@ -5,16 +5,26 @@
 </p>
 
 ## Second alternative (Product price is a constant)
-![](images/TCA_1_1_b.png)
+<p align="center">
+  <img src="images/TCA_1_1_b.png">
+</p>
 
 # 1.2
-![](images/TCA_1_2.png)
+<p align="center">
+  <img src="images/TCA_1_2.png">
+</p>
 
 # 1.3
-![](images/TCA_1_3.png)
+<p align="center">
+  <img src="images/TCA_1_3.png">
+</p>
 
 # 1.4
-![](images/TCA_1_4.png)
+<p align="center">
+  <img src="images/TCA_1_4.png">
+</p>
 
 # 1.5
-![](images/TCA_1_5.png)
+<p align="center">
+  <img src="images/TCA_1_5.png">
+</p>
