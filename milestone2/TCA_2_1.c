@@ -15,7 +15,7 @@ int main() {
      * a digit. 1price is invalid, while price1 is valid.
      * Variable names are case sensitive, meaning that price and Price are two 
      * completely different variables.
-     * Finally, a variable name shall be a reserved keyword. See the list below.
+     * Finally, a variable name shall not be a reserved keyword. See the list below.
      * 
      * 2) a type (e.g. int).
      * The type of a variable dictates the nature of values it can hold:
