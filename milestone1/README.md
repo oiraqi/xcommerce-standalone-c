@@ -1,6 +1,8 @@
 # 1.1
 ## First alternative (Product price is an input)
-![](images/TCA_1_1_a.png)
+<p align="center">
+  <img src="images/TCA_1_1_a.png">
+</p>
 
 ## Second alternative (Product price is a constant)
 ![](images/TCA_1_1_b.png)
