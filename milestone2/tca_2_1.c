@@ -1,5 +1,6 @@
 /**
  * This is the C code corresponding to algorithm 1.1 (Milestone 1)
+ * Introducing basics of C programming
  * Author: Omar IRAQI - o.iraqi@aui.ma | o.iraqi@gmail.com
  */
 
