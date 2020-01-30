@@ -7,7 +7,7 @@
 int main() {
     /**
      * total_price, price and quantity are variables.
-     * A variable represents data that is acted upon by an algorithm/program.
+     * A variable represents data that is acted on by an algorithm/program.
      * As its name implies, the value of this data may vary during the execution 
      * of the algorithm/program.
     */ 
