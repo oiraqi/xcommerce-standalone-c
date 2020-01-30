@@ -1,3 +1,8 @@
+/**
+ * This is the C code corresponding to algorithm 1.1 (Milestone 1)
+ * Author: Omar IRAQI - o.iraqi@aui.ma | o.iraqi@gmail.com
+ */
+
 int main() {
     /**
      * total_price, price and quantity are variables.
