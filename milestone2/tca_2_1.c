@@ -60,7 +60,7 @@ int main() {
 }
 
 /**
- * The list of reserved keywords (cannot be used as variable names) so far:
+ * The list, so far, of reserved keywords (cannot be used as variable names):
  * int, float, return
  * This list will keep growing, as we discover each time a new reserved keyword.
  */
