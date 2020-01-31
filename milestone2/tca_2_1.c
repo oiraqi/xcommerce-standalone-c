@@ -10,7 +10,7 @@ int main() {
      * A variable represents data that is acted on by an algorithm/program.
      * As its name implies, the value of this data may vary during the execution 
      * of the algorithm/program.
-    */ 
+    */
     int quantity;
     float price, total_price;
     /**
@@ -24,7 +24,7 @@ int main() {
      * completely different variables.
      * As a good practice, give your variables meaningful, lower-case names, and if
      * they are made of more than one term, then separate the terms with _. Ex. total_price.
-     * Finally, a variable name shall not be a reserved keyword. See the list in the end of this file.
+     * Finally, a variable name shall not be a reserved keyword. See the list at the end of this file.
      * 
      * 2) a type (e.g. int).
      * The type of a variable dictates the nature of values it can hold:
