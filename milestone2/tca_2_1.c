@@ -24,7 +24,7 @@ int main() {
      * completely different variables.
      * As a good practice, give your variables meaningful, lower-case names, and if
      * they are made of more than one term, then separate the terms with _. Ex. total_price.
-     * Finally, a variable name shall not be a reserved keyword. See the list below.
+     * Finally, a variable name shall not be a reserved keyword. See the list in the end of this file.
      * 
      * 2) a type (e.g. int).
      * The type of a variable dictates the nature of values it can hold:
