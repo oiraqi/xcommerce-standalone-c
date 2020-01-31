@@ -11,7 +11,8 @@ int main() {
      * As its name implies, the value of this data may vary during the execution 
      * of the algorithm/program.
     */ 
-    int total_price, price, quantity;
+    float price, total_price;
+    int quantity;
     /**
      * A variable has:
      * 1) a name (e.g. total_price)
@@ -21,12 +22,20 @@ int main() {
      * a digit. 1price is invalid, while price1 is valid.
      * Variable names are case sensitive, meaning that price and Price are two 
      * completely different variables.
+     * As a good practice, give your variables meaningful, lower-case names, and if
+     * they are made of more than one term, then separate the terms with _. Ex. total_price.
      * Finally, a variable name shall not be a reserved keyword. See the list below.
      * 
      * 2) a type (e.g. int).
      * The type of a variable dictates the nature of values it can hold:
      * Natural numbers, floating-point numbers, text, etc.
      * This is very useful. More on this later...
+     * 
+     * Variables must be declared before being used in the rest of the program.
+     * Variable declaration consists of specifying its type and name.
+     * Ex. int quantiy;
+     * Variables of the same type can be declared on the same line, separated by a comma.
+     * Ex. float price, total_price; 
      */
 
     /**
@@ -52,6 +61,6 @@ int main() {
 
 /**
  * The list of reserved keywords (cannot be used as variable names) so far:
- * int, return
+ * int, float, return
  * This list will keep growing, as we discover each time a new reserved keyword.
  */
