@@ -11,8 +11,8 @@ int main() {
      * As its name implies, the value of this data may vary during the execution 
      * of the algorithm/program.
     */ 
-    float price, total_price;
     int quantity;
+    float price, total_price;    
     /**
      * A variable has:
      * 1) a name (e.g. total_price)
