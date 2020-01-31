@@ -12,7 +12,7 @@ int main() {
      * of the algorithm/program.
     */ 
     int quantity;
-    float price, total_price;    
+    float price, total_price;
     /**
      * A variable has:
      * 1) a name (e.g. total_price)
