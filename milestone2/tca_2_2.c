@@ -11,8 +11,9 @@
 #include <stdio.h>
 
 /**
- * Define TAX_RATE as equivalent to 20
+ * Define TAX_RATE to be equivalent to 20
  * Can't be changed to a different value, as this is not a variable
+ * Notice the use of UPPER CASE as a good naming convention here
 */
 #define TAX_RATE 20
 
