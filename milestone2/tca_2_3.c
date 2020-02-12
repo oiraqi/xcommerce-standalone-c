@@ -17,7 +17,10 @@
 /**
  * Define TAX_RATE to be equivalent to 20
  * Can't be changed to a different value, as this is not a variable
- * Notice the use of UPPER CASE as a good naming convention here
+ * Notice the use of UPPER CASE as a good naming convention here.
+ * 
+ * All occurences of TAX_RATE will be changed to 20 by the preprocessor,
+ * which is part of the compiler, before compiling the code.
 */
 #define TAX_RATE 20
 
