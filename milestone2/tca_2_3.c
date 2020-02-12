@@ -4,8 +4,7 @@
  * unsigned type modifier
  * short type
  * -= and += operators
- * %hu
- * %.2f
+ * %hu and %.2f
  * Author: Omar IRAQI - o.iraqi@aui.ma | o.iraqi@gmail.com
  */
 
