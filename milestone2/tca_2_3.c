@@ -70,6 +70,7 @@ int main()
         net_total_price = price * quantity;
         tax = net_total_price * TAX_RATE / 100;
         total_price = net_total_price + tax;
+        /* decrement available_quantity by quantity */
         available_quantity -= quantity;
         
         /* %.2f to print only 2 digits after the floating point */
