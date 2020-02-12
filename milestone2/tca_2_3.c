@@ -34,8 +34,9 @@ int main()
      * unsigned is a modifier that can be applied to numerical types, such as short,
      * int and float to restrict their values to positive ones.
      * Without adding unsigned modifier to the type (short in this case),
-     * the numerical variable can take positive, as well as negative values. 
-     * But when we add unsigned modifier to the type
+     * the numerical variable can take positive, as well as negative values.
+     * The typical range of unsigned short values is [|0, 2^16|[, while
+     * the typical range of unsigned int values is [|0, 2^32[.
     */
     unsigned short quantity, available_quantity;
     float price, net_total_price, tax, total_price;
