@@ -43,7 +43,9 @@ int main()
 
     /* Output to the user that s/he should enter the available quantity */
     printf("Available quantity: ");
-    /* Input the price from the user, %f is used because price is a float */
+    /* Input the available_quantity from the user
+     * %hu: h for half int, u for unsigned
+     */
     scanf("%hu", &available_quantity);
     /* Output to the user that s/he should enter the price */
     printf("Price: ");
@@ -51,7 +53,9 @@ int main()
     scanf("%f", &price);
     /* Output to the user that s/he should enter the quantiy */
     printf("Ordered quantity: ");
-    /* Input the quantiy from the user, %d is used because quantity is a decimal (an integer) */
+    /* Input the quantiy from the user
+     * %hu: h for half int, u for unsigned
+     */
     scanf("%hu", &quantity);
 
     /**
@@ -68,6 +72,7 @@ int main()
         total_price = net_total_price + tax;
         available_quantity -= quantity;
         
+        /* %.2f to print only 2 digits after the floating point */
         printf("\nNet Total Price: %.2f\n", net_total_price);
         printf("Tax: %.2f\n", tax);
         printf("Total Price: %.2f\n", total_price);
