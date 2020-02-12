@@ -4,11 +4,17 @@
  * Author: Omar IRAQI - o.iraqi@aui.ma | o.iraqi@gmail.com
  */
 
+/**
+ * For printf and scanf (see below) to be recognized by the compiler.
+ * More on this later. Just accept it and use it as is for now.
+*/
+#include <stdio.h>
+
 int main() {
     /**
      * total_price, price and quantity are variables.
      * A variable represents data that is acted on by an algorithm/program.
-     * As its name implies, the value of this data may vary during the execution 
+     * As its name implies, the value of this data may vary during the execution
      * of the algorithm/program.
     */
     int quantity;
@@ -35,8 +41,17 @@ int main() {
      * Variable declaration consists of specifying its type and name.
      * Ex. int quantiy;
      * Variables of the same type can be declared on the same line, separated by a comma.
-     * Ex. float price, total_price; 
+     * Ex. float price, total_price;
      */
+
+    /* Output to the user that s/he should enter the price */
+    printf("Price: ");
+    /* Input the price from the user, %f is used because price is a float */
+    scanf("%f", &price);
+    /* Output to the user that s/he should enter the quantiy */
+    printf("Quantiy: ");
+    /* Input the quantiy from the user, %d is used because quantity is a decimal (an integer) */
+    scanf("%d", &quantity);
 
     /**
      * In the statement below, price * quantity is computed and the result is
@@ -55,6 +70,13 @@ int main() {
      * This is a logical expression that checks whether the value of the variable a is
      * equal to the value of the variable b, without affecting/changing any of the values.
      */
+
+    /**
+     * Output total price to the user. %f will be substitued by
+     * the value of total_price variable, as computed above (price * quantity)
+     * \n is a special character that represents going back to a new line
+    */
+    printf("Total Price: %f\n", total_price);
 
     return 0;
 }
