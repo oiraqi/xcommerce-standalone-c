@@ -3,7 +3,7 @@
  * Conditional execution / selection through if/else statements
  * unsigned type modifier
  * short type
- * -= decrementaion and += incrementaion operators
+ * -= decrementaion operator and += incrementaion operator
  * %hu and %.2f formatting options
  * Author: Omar IRAQI - o.iraqi@aui.ma | o.iraqi@gmail.com
  */
