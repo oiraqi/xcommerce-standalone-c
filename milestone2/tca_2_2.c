@@ -37,6 +37,7 @@ int main() {
     net_total_price = price * quantity;
     tax = net_total_price * TAX_RATE / 100;
     total_price = net_total_price + tax;
+    
     /**
      * Output net total price, taxt and total price  to the user.
      * %f will be substitued each time by the value of the specified variable 
