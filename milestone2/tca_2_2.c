@@ -6,9 +6,14 @@
 
 /**
  * For printf and scanf (see below) to be recognized by the compiler.
- * More on this later. Just accept it and use it as is for now.
+ * More on this later. Just accept it and use it as is for now
 */
 #include <stdio.h>
+
+/**
+ * Define TAX_RATE as equivalent to 20
+ * Can't be changed to a different value, as this is not a variable
+*/
 #define TAX_RATE 20
 
 int main() {
