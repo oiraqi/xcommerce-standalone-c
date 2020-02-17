@@ -77,7 +77,10 @@ int main()
         total_price = net_total_price + tax;
         /* Decrement available_quantity by quantity using the -= decrementation operator */
         available_quantity -= quantity;
-        /* Obviously, += is the incrementation operator
+        /* Obviously:
+        += is the incrementation operator
+        *= is the multiplication assignment operator
+        /= is the division assignment operator
         
         /* %.2f to print only 2 digits after the floating point */
         printf("\nNet Total Price: %.2f\n", net_total_price);
