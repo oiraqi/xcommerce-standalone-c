@@ -36,8 +36,8 @@ int main()
      * bigger than the range of short values, typically [|-2^15, 2^15|[.
      * In our case, the short range is enough for quantity and available_quantity values.
      * 
-     * unsigned is a modifier that can be applied to numerical types, such as short,
-     * int and float to restrict their values to positive ones.
+     * unsigned is a modifier that can be applied to short and int types
+     * to restrict their values to positive ones.
      * Without adding unsigned modifier to the type (short in this case),
      * the numerical variable can take positive, as well as negative values.
      * The typical range of unsigned short values is [|0, 2^16|[, while
@@ -93,6 +93,6 @@ int main()
 
 /**
  * The list, so far, of reserved keywords (cannot be used as variable names):
- * int, float, short, unsigned, return
+ * int, float, short, unsigned, return, if, else
  * This list will keep growing, as we discover each time a new reserved keyword.
  */
