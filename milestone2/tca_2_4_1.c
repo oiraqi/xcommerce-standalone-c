@@ -52,12 +52,15 @@ int main()
     scanf("%hu", &quantity);
 
     /**
-     * Conditional execution / selection through if/else statements
-     * if (condition) { statement_1; statement_2; ... statement_n; }
+     * Conditional execution / selection through if / else if / else statements
+     * if (condition_1) { statement_1_1; statement_1_2; ... }
+     * else if (condition_2) { statement_2_1; statement_2_2; ... }
+     * ...
+     * else if (condition_n) { statement_n_1; statement_n_2; ... }
      * else { other_statement_1; other_statement_2; ... other_statement_m; }
-     * condition is a logical expression such as quantity <= available_quantity
-     * statement_1 through statement_n get executed if and only if condition is true
-     * Otherwise, other_statement_1 through other_statement_m get executed.
+     * condition_i is checked if and only if condition_j is false for all j such that 1 <= j < i
+     * other_statement_1 through other_statement_m get executed if and only if all condition_i 
+     * are false for 1 <= i <= n
      */
     if (index == 1) { /* Notice the use of == operator for comparison, NOT = */
         if (quantity <= available_quantity_1) {
