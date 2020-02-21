@@ -73,6 +73,7 @@ int main()
      * break should be added at the end of each case block, otherwise
      * the subsequent case block(s) will execute unconditionally.
      * The default block executes if no case value matches the variable
+     * 
      * case blocks can be grouped like this:
      *      case value_i:
      *      case value_j:
@@ -81,6 +82,9 @@ int main()
      *          statement_n;
      *          break;
      * statement_1 through statement_n are executed in both cases (value_i and value_j)
+     * 
+     * The variable evaluated using switch must be of a whole numeric type, e.g. char, short, int and long
+     * switch/case allows checking for == only, not <, >, <=, >=
      */
     switch (index) {
         case 1:
