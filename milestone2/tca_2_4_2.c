@@ -84,6 +84,7 @@ int main()
      * statement_1 through statement_n are executed in both cases (value_i and value_j)
      * 
      * The variable evaluated using switch must be of a whole numeric type, e.g. char, short, int and long
+     * float and double are not allowed!
      * switch/case allows checking for == only, not <, >, <=, >=
      */
     switch (index) {
