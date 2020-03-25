@@ -59,7 +59,8 @@ For each algorithm above (1.1 through 1.5):
 - Test it
 - Share it
 
-## Milestone 3 (Redo from scratch using the top-down approach)
+## Milestone 3 (Top-down approach / C functions / Multi-file program / Partial compiling)
+Now, we would like to handle n customers / calls, one after the other. Each customer may order one or more products from the thtree-product catalog, again and again, until s/he's done. Then the operator, moves to the next customer.
 
 ## Milestone 4 (Multi-product catalog, arrays)
 
