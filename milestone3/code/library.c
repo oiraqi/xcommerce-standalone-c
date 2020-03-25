@@ -2,8 +2,7 @@
 #define TAX_RATE 20
 
 /**
- * These are GLOBAL variables, as they have to be accessed by many functions
- * 
+ * These are GLOBAL variables, as they have to be accessed by many functions. 
  */
 unsigned short qa1, qa2, qa3;
 float price1, price2, price3, net_total_price;
