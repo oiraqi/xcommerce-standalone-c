@@ -39,6 +39,9 @@ void init_stock() {
 }
 
 void handle_customer() {
+    /**
+     * These are LOCAL variables. Their scope is limited to this function block.
+     */
     int feedback, index, quantity;
     net_total_price = 0.0;
     printf("*************Handling a new customer*************\n");
@@ -98,6 +101,9 @@ void _handle_order(unsigned short index, unsigned short quantiy) {
 }
 
 void __compute_tax_and_total_price() {
+    /**
+     * These are LOCAL variables. Their scope is limited to this function block.
+     */
     float tax, total_price;
 
     tax = net_total_price * TAX_RATE / 100;
