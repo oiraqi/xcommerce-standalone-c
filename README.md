@@ -59,7 +59,7 @@ For each algorithm above (1.1 through 1.5):
 - Test it
 - Share it
 
-## Milestone 3 (More specifications: discounts, shipping cost based on ordered products weight, top-down approach)
+## Milestone 3 (Redo from scratch using the top-down approach)
 
 ## Milestone 4 (Multi-product catalog, arrays)
 
