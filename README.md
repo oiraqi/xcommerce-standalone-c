@@ -21,7 +21,7 @@ This project is about developing such a computer program (Telecommerce Applicati
 - [Introduction to Computer Programming](https://docs.google.com/presentation/d/1kbHYSNY1zxqZXxcYxdkfULK5dRZ42IeiKI_z0pE6SN0/edit?usp=sharing)
 - [Algorithms](https://docs.google.com/presentation/d/1oe6NSNcz9tKE_XYgdV7bV7XLiNyn81HFcYLmKn1ECaw/edit?usp=sharing)
 
-## Milestone 1 (Basic specifications, algorithms only)
+## Milestone 1 (Basic Specifications / Algorithms Only)
 1.1. We start by considering a **single-product** catalog. Each customer calls and specifies the quantity of the product (the only one available) s/he wants to order. The operator shall use the Telecommerce Application to compute the total price.
 - Identify the problem input and output
 - Design the algorithm and express it as a flow chart
@@ -63,7 +63,7 @@ For each algorithm above (1.1 through 1.5):
 Now, we would like to handle n customers (calls), one after the other. And just like 1.5, each customer may order one or more products from the thtree-product catalog, again and again, until s/he's done. Then the operator, moves to the next customer.
 Before receiving any call, the operator must first initialize the stock by setting the price and quantity of each product.
 
-## Milestone 4 (Simple Arrays / Multi-Dimensional Arrays)
+## Milestone 4 (Simple Arrays / Multi-dimensional Arrays)
 Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to a have a **detailed report** about all the placed orders. The report should show:
 - the ordered products, their respective quantities and prices, net total price, tax and total price **per customer**
 - the customer with the **lowest** total price, as well as the corresponding net total price, tax and total price
@@ -71,11 +71,12 @@ Here, we will no more be bound to just three products. We will consider a multi-
 - the grand net total, the grand tax and the grand total
 - the **current** stock, i.e. the **remaining quantity** of each product.
 
-## Milestone 5 (Product names, customer info, order printing, name-like search, strings)
+## Milestone 5 (Strings)
+Product names, customer info, order printing, name-like search...
 
-## Milestone 6 (Better memory usage, pointers)
+## Milestone 6 (Pointers)
 
-## Milestone 7 (Better encapsulation, user-defined types)
+## Milestone 7 (Encapsulation / User-defined Data Types)
 - typedef {...} product_t;
 - typedef {...} order_t;
 
