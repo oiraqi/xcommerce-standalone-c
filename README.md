@@ -40,7 +40,7 @@ This project is about developing such a computer program (Telecommerce Applicati
 1.5. We still consider a three-product catalog. However, a customer may call and specify one or more products to order, along with their respective quantities. The customer can specify the same product many times, e.g. 3 x Product1, then 2 x Product2, then 1 x Product1.
 - Enhance your algorithm and corresponding flow chart
 
-## Milestone 2
+## Milestone 2 (Introduction To C Programming)
 *Prerequisites*
 - Git installed
 - Gcc (MinGW for Windows) installed
@@ -59,11 +59,11 @@ For each algorithm above (1.1 through 1.5):
 - Test it
 - Share it
 
-## Milestone 3 (Top-down approach / C functions / Multi-file program / Partial code compiling)
+## Milestone 3 (Top-down Approach / C Functions / Multi-file Programming / Partial Code Compiling)
 Now, we would like to handle n customers (calls), one after the other. And just like 1.5, each customer may order one or more products from the thtree-product catalog, again and again, until s/he's done. Then the operator, moves to the next customer.
 Before receiving any call, the operator must first initialize the stock by setting the price and quantity of each product.
 
-## Milestone 4 (Multi-product catalog, detailed report, arrays)
+## Milestone 4 (Simple Arrays / Multi-Dimensional Arrays)
 Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to a have a **detailed report** about all the placed orders. The report should show:
 - the ordered products, their respective quantities and prices, net total price, tax and total price **per customer**
 - the customer with the **lowest** total price, as well as the corresponding net total price, tax and total price
