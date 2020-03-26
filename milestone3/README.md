@@ -11,6 +11,8 @@ Now, we would like to handle *n* customers (calls), one after the other. And jus
 - Compile and link all oject files to generate your executable program
 - Run and test your executable program
 
+Related material: [Top/Down Approach](https://docs.google.com/presentation/d/1MMt0wCU1iK8JAOL-SSjzq4mcDM2VQKTG3TH8Pxhirkk/edit?usp=sharing)
+
 # High-level Algorithm
 <p align="center">
   <img src="algorithms/milestone3-high-level.png">
