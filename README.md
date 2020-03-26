@@ -59,11 +59,12 @@ For each algorithm above (1.1 through 1.5):
 - Test it
 - Share it
 
-## Milestone 3 (Top-down approach / C functions / Multi-file program / Partial compiling)
+## Milestone 3 (Top-down approach / C functions / Multi-file program / Partial code compiling)
 Now, we would like to handle n customers (calls), one after the other. And just like 1.5, each customer may order one or more products from the thtree-product catalog, again and again, until s/he's done. Then the operator, moves to the next customer.
 Before receiving any call, the operator must first initialize the stock by setting the price and quantity of each product.
 
-## Milestone 4 (Multi-product catalog, arrays)
+## Milestone 4 (Multi-product catalog, detailed report, arrays)
+Here, we will no more be bound to three products only. We will consider a multi-product catalog, i.e., the catalog can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to a have a detailed report about all the placed orders. The report should show the net total price, the tax and the total price per customer. The report should also identify the customer with the highest total price and show corresponding net total price, tax and total price. In the end, the report should show the grand net total, the grand tax and the grand total, as well as the current stock, i.e. the remaining quantity of each product of the catalog.
 
 ## Milestone 5 (Product names, customer info, order printing, name-like search, strings)
 
