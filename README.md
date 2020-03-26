@@ -74,6 +74,7 @@ Before receiving any call, the operator must first initialize the stock by setti
 - Compile and link all oject files to generate your executable program
 - Run and test your executable program
 
+Related material: [Top/Down Approach](https://docs.google.com/presentation/d/1MMt0wCU1iK8JAOL-SSjzq4mcDM2VQKTG3TH8Pxhirkk/edit?usp=sharing)
 
 ## Milestone 4 (Simple Arrays / Multi-dimensional Arrays)
 Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to a have a **detailed report** about all the placed orders. The report should show:
@@ -82,8 +83,6 @@ Here, we will no more be bound to just three products. We will consider a multi-
 - the customer with the **highest** total price, as well as the corresponding net total price, tax and total price
 - the grand net total, the grand tax and the grand total
 - the **current** stock, i.e. the **remaining quantity** of each product.
-
-Related material: [Top/Down Approach](https://docs.google.com/presentation/d/1MMt0wCU1iK8JAOL-SSjzq4mcDM2VQKTG3TH8Pxhirkk/edit?usp=sharing)
 
 ## Milestone 5 (Strings)
 Product names, customer info, order printing, name-like search...
