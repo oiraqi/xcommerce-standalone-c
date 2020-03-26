@@ -64,7 +64,11 @@ Now, we would like to handle n customers (calls), one after the other. And just 
 Before receiving any call, the operator must first initialize the stock by setting the price and quantity of each product.
 
 ## Milestone 4 (Multi-product catalog, detailed report, arrays)
-Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to a have a detailed report about all the placed orders. The report should show the net total price, the tax and the total price **per customer**. The report should also identify the customer with the **highest** total price and show corresponding net total price, tax and total price. In the end, the report should show the grand net total, the grand tax and the grand total, as well as the current stock, i.e. the remaining quantity of each product.
+Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to a have a detailed report about all the placed orders. The report should:
+- show the net total price, the tax and the total price **per customer**
+- identify the customer with the **highest** total price and show corresponding net total price, tax and total price
+- show the grand net total, the grand tax and the grand total
+- show the current stock, i.e. the remaining quantity of each product.
 
 ## Milestone 5 (Product names, customer info, order printing, name-like search, strings)
 
