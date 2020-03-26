@@ -65,7 +65,7 @@ Before receiving any call, the operator must first initialize the stock by setti
 
 ## Milestone 4 (Multi-product catalog, detailed report, arrays)
 Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to a have a **detailed report** about all the placed orders. The report should:
-- show the ordered products, their respective quantities and prices, net total price, the tax and the total price **per customer**
+- show the ordered products, their respective quantities and prices, net total price, tax and total price **per customer**
 - identify the customer with the **highest** total price and show corresponding net total price, tax and total price
 - show the grand net total, the grand tax and the grand total
 - show the **current** stock, i.e. the **remaining quantity** of each product.
