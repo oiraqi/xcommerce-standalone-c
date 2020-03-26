@@ -20,6 +20,7 @@ This project is about developing such a computer program (Telecommerce Applicati
 ## Related Material
 - [Introduction to Computer Programming](https://docs.google.com/presentation/d/1kbHYSNY1zxqZXxcYxdkfULK5dRZ42IeiKI_z0pE6SN0/edit?usp=sharing)
 - [Algorithms](https://docs.google.com/presentation/d/1oe6NSNcz9tKE_XYgdV7bV7XLiNyn81HFcYLmKn1ECaw/edit?usp=sharing)
+- Top/Down Approach [https://docs.google.com/presentation/d/1MMt0wCU1iK8JAOL-SSjzq4mcDM2VQKTG3TH8Pxhirkk/edit?usp=sharing]
 
 ## Milestone 1 (Basic Specifications / Algorithms Only)
 1.1. We start by considering a **single-product** catalog. Each customer calls and specifies the quantity of the product (the only one available) s/he wants to order. The operator shall use the Telecommerce Application to compute the total price.
@@ -81,6 +82,7 @@ Here, we will no more be bound to just three products. We will consider a multi-
 - the customer with the **highest** total price, as well as the corresponding net total price, tax and total price
 - the grand net total, the grand tax and the grand total
 - the **current** stock, i.e. the **remaining quantity** of each product.
+Related material: - Top/Down Approach [https://docs.google.com/presentation/d/1MMt0wCU1iK8JAOL-SSjzq4mcDM2VQKTG3TH8Pxhirkk/edit?usp=sharing]
 
 ## Milestone 5 (Strings)
 Product names, customer info, order printing, name-like search...
