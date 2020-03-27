@@ -41,7 +41,7 @@ void handle_customer() {
     /**
      * These are LOCAL variables. Their scope is limited to this function block.
      */
-    int feedback, index, quantity;
+    int feedback = 1, index, quantity;
     net_total_price = 0.0;
     printf("*************Handling a new customer*************\n");
     do {
