@@ -6,7 +6,7 @@
 /**
  * These are GLOBAL variables, as they have to be accessed by many functions.
  * n_customers: the actual number of customers we want to handle. Must be <= MAX_NUMBER_OF_CUSTOMERS.
- * n_products: the actual number of products in our catalog. Must be <= MAX_NUMBER_OF_PRODUCTS
+ * n_products: the actual number of products in our catalog. Must be <= MAX_NUMBER_OF_PRODUCTS.
  */
 unsigned short n_customers, n_products;
 /**
@@ -33,7 +33,7 @@ tax[MAX_NUMBER_OF_CUSTOMERS], total_price[MAX_NUMBER_OF_CUSTOMERS];
  * ordered_quantity is a two-dimensional array of unsigned short elements.
  * It represents the quantity ordered of each product by each customer.
  * It is like a matrix with MAX_NUMBER_OF_CUSTOMERS lines and MAX_NUMBER_OF_PRODUCTS columns.
- * orderd_quantity[ci][pi] represents the quantity ordered of product pi by customer ci
+ * orderd_quantity[ci][pi] represents the quantity ordered of product pi by customer ci.
  */
 unsigned short orderd_quantity[MAX_NUMBER_OF_CUSTOMERS][MAX_NUMBER_OF_PRODUCTS];
 
@@ -50,7 +50,7 @@ void __handle_order(int, int, unsigned short);
 void ___compute_tax_and_total_price(int);
 
 /**
- * Initialize stock
+ * Initialize stock.
  */
 void init_stock() {
     int i;
@@ -69,11 +69,11 @@ void init_stock() {
 }
 
 /**
- * Handle all (n_customers) customers
+ * Handle all (n_customers) customers.
  */
 void handle_customers() {
     /**
-     * ci: customer index -- local variable
+     * ci: customer index -- local variable.
      */
     int ci;
 
@@ -88,7 +88,7 @@ void handle_customers() {
 }
 
 /**
- * Print a report about all orders placed by all customers
+ * Print a report about all orders placed by all customers.
  */
 void print_report() {
     /**
@@ -147,23 +147,23 @@ void print_report() {
 }
 
 /**
- * Handle one customer ci
- * ci: customer index
+ * Handle one customer ci.
+ * ci: customer index.
  */
 void _handle_customer(int ci) {
     /**
      * These are LOCAL variables. Their scope is limited to this function block.
-     * pi: product index, moves between 0 and n_products
+     * pi: product index, moves between 0 and n_products.
      */
     int feedback = 1, pi, quantity;
 
     /**
-     * Initialize the net total price for this customer
+     * Initialize the net total price for this customer.
      */
     net_total_price[ci] = 0.0;
 
     /**
-     * Initialize ordered quantities for this customer
+     * Initialize ordered quantities for this customer.
      */
     for (pi=0; pi < n_products; pi++) {
         orderd_quantity[ci][pi] = 0;
@@ -193,9 +193,9 @@ void _handle_customer(int ci) {
 }
 
 /**
- * Handle one order placed by a customer ci, for a product pi
- * ci: customer index
- * pi: product index
+ * Handle one order placed by a customer ci, for a product pi.
+ * ci: customer index.
+ * pi: product index.
  */
 void __handle_order(int ci, int pi, 
                         unsigned short quantiy) {
@@ -215,8 +215,8 @@ void __handle_order(int ci, int pi,
 }
 
 /**
- * Compute the tax and total price for customer ci
- * ci: customer index
+ * Compute the tax and total price for customer ci.
+ * ci: customer index.
  */
 void ___compute_tax_and_total_price(int ci) {
 
