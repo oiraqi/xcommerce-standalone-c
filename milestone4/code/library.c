@@ -30,21 +30,20 @@ float price[MAX_NUMBER_OF_PRODUCTS], net_total_price[MAX_NUMBER_OF_CUSTOMERS],
 tax[MAX_NUMBER_OF_CUSTOMERS], total_price[MAX_NUMBER_OF_CUSTOMERS];
 
 /**
- * ordered_quantity is a two-dimensional array of unsigned short elements
- * It represents the quantity ordered of each product by each customer
- * It is like a matrix with MAX_NUMBER_OF_CUSTOMERS lines and MAX_NUMBER_OF_PRODUCTS columns
- * orderd_quantity[i][j] represents the quantity ordered of product j by customer i
+ * ordered_quantity is a two-dimensional array of unsigned short elements.
+ * It represents the quantity ordered of each product by each customer.
+ * It is like a matrix with MAX_NUMBER_OF_CUSTOMERS lines and MAX_NUMBER_OF_PRODUCTS columns.
+ * orderd_quantity[ci][pi] represents the quantity ordered of product pi by customer ci
  */
 unsigned short orderd_quantity[MAX_NUMBER_OF_CUSTOMERS][MAX_NUMBER_OF_PRODUCTS];
 
 /**
  * These two prototypes are for functions that are used in this file only.
- * They are not part of header.h because we do not need/want them to be 
- * used/called from outside this file. We prefix them with _ as a naming
- * convention, to remind ourselves that they are not accessible outside this file.
- * _handle_order gets called by handle_customer
- * __compute_tax_and_total_price gets called by _handle_order
- * The number of _ in the prefix gives an idea about the order/depth of the function
+ * They are not part of header.h because we do not need/want them to be used/called from outside this file.
+ * We prefix them with _ as a naming convention, to remind ourselves that they are not accessible outside this file.
+ * _handle_order gets called by handle_customer.
+ * __compute_tax_and_total_price gets called by _handle_order.
+ * The number of _ in the prefix gives an idea about the order/depth of the function.
  */
 void _handle_customer(int);
 void __handle_order(int, int, unsigned short);
@@ -94,10 +93,10 @@ void handle_customers() {
 void print_report() {
     /**
      * These are LOCAL variables. Their scope is limited to this function block.
-     * ci: customer index, moves between 0 and n_customers
-     * pi: product index, moves between 0 and n_products
-     * lci: lowest-order customer index, keeps track of the customer with the lowest order
-     * hci: highest-order customer index, keeps track of the customer with the highest order
+     * ci: customer index, moves between 0 and n_customers.
+     * pi: product index, moves between 0 and n_products.
+     * lci: lowest-order customer index, keeps track of the customer with the lowest order.
+     * hci: highest-order customer index, keeps track of the customer with the highest order.
      */
     int ci, pi, lci = 0, hci = 0;
     float grand_net_total = 0.0, grand_tax = 0.0, grand_total = 0.0;
