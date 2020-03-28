@@ -193,9 +193,10 @@ void _handle_customer(int ci) {
 }
 
 /**
- * Handle one order placed by a customer ci, for a product pi.
- * ci: customer index.
- * pi: product index.
+ * Handle one order of product pi, by customer ci.
+ * ci: ordering customer index.
+ * pi: ordered product index.
+ * quantity: ordered quantity.
  */
 void __handle_order(int ci, int pi, 
                         unsigned short quantiy) {
