@@ -8,26 +8,21 @@
  */
 unsigned short n_customers, n_products;
 /**
- * quantity is an array of unsigned short elements
- * Each of them represents the quantity of a product
- * The number of these elements is MAX_NUMBER_OF_PRODUCTS
- * We also say that MAX_NUMBER_OF_PRODUCTS is the size of the quantity array
- * Think of these elements as boxes in memory, lying one after the other
- * The advantage is that we can refer to all these elements using one 
- * symbol/variable name: quantity in this case, and using an index 
- * from 0 to MAX_NUMBER_OF_PRODUCTS - 1
- * quantity[i] represents the quantity of the ith product
+ * quantity is an array of unsigned short elements. Each of them represents the quantity of a product
+ * The number of these elements is MAX_NUMBER_OF_PRODUCTS. We also say that MAX_NUMBER_OF_PRODUCTS
+ * is the size of the quantity array. Think of these elements as boxes in memory, lying one after the other
+ * The advantage is that we can refer to all these elements using one symbol/variable name: quantity in this case,
+ * and using an index from 0 to MAX_NUMBER_OF_PRODUCTS - 1 that we put between [].
+ * quantity[i] represents the quantity of the ith product.
  */ 
 unsigned short quantity[MAX_NUMBER_OF_PRODUCTS];
 
 /**
- * Similarily, price is an array of float elements
- * Each of them represents the price of a product
- * The number of these elements is MAX_NUMBER_OF_PRODUCTS
- * net_total_price is an array of float elements
- * Each of them represents the net_total_price that must be paid by a customer
- * The number of these elements is MAX_NUMBER_OF_CUSTOMERS
- * tax and total_price are also arrays of float elements
+ * Similarily, price is an array of float elements. Each of them represents the price of a product.
+ * The number of these elements is MAX_NUMBER_OF_PRODUCTS.
+ * net_total_price is an array of float elements. Each of them represents the net_total_price that must be paid by a customer.
+ * The number of these elements is MAX_NUMBER_OF_CUSTOMERS.
+ * tax and total_price are also arrays of float elements.
  */ 
 float price[MAX_NUMBER_OF_PRODUCTS], net_total_price[MAX_NUMBER_OF_CUSTOMERS], 
 tax[MAX_NUMBER_OF_CUSTOMERS], total_price[MAX_NUMBER_OF_CUSTOMERS];
