@@ -4,7 +4,9 @@
 #define MAX_NUMBER_OF_CUSTOMERS 30
 
 /**
- * These are GLOBAL variables, as they have to be accessed by many functions. 
+ * These are GLOBAL variables, as they have to be accessed by many functions.
+ * n_customers: the actual number of customers we want to handle. Must be <= MAX_NUMBER_OF_CUSTOMERS.
+ * n_products: the actual number of products in our catalog. Must be <= MAX_NUMBER_OF_PRODUCTS
  */
 unsigned short n_customers, n_products;
 /**
