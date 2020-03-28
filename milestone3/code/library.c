@@ -9,16 +9,18 @@ float price1, price2, price3, net_total_price;
 
 /**
  * These two prototypes are for functions that are used in this file only.
- * They are not part of header.h because we do not need/want them to be 
- * used/called from outside this file. We prefix them with _ as a naming
- * convention, to remind ourselves that they are not accessible outside this file.
- * _handle_order gets called by handle_customer
- * __compute_tax_and_total_price gets called by _handle_order
- * The number of _ in the prefix gives an idea about the order/depth of the function
+ * They are not part of header.h because we do not need/want them to be used/called from outside this file.
+ * We prefix them with _ as a naming convention, to remind ourselves that they are not accessible outside this file.
+ * _handle_order gets called by handle_customer.
+ * __compute_tax_and_total_price gets called by _handle_order.
+ * The number of _ in the prefix gives an idea about the order/depth of the function.
  */
 void _handle_order(unsigned short, unsigned short);
 void __compute_tax_and_total_price();
 
+/**
+ * Initialize stock.
+ */
 void init_stock() {
     printf("*************Initializing Stock*************\n");
     printf("Enter the available quantity of product 1: ");
@@ -37,6 +39,9 @@ void init_stock() {
     scanf("%f", &price3);
 }
 
+/**
+ * Handle customer.
+ */
 void handle_customer() {
     /**
      * These are LOCAL variables. Their scope is limited to this function block.
@@ -65,6 +70,11 @@ void handle_customer() {
     } while (feedback == 1);
 }
 
+/**
+ * Handle one order.
+ * index: ordered product.
+ * quantity: ordered quantity.
+ */
 void _handle_order(unsigned short index, unsigned short quantiy) {
     switch (index) {
         case 1:
@@ -99,6 +109,9 @@ void _handle_order(unsigned short index, unsigned short quantiy) {
     }    
 }
 
+/**
+ * Compute tax and total price.
+ */
 void __compute_tax_and_total_price() {
     /**
      * These are LOCAL variables. Their scope is limited to this function block.
