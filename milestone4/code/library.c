@@ -53,6 +53,9 @@ void _handle_customer(int);
 void __handle_order(int, int, unsigned short);
 void ___compute_tax_and_total_price(int);
 
+/**
+ * Initialize stock
+ */
 void init_stock() {
     int i;
     printf("*************Initializing Stock*************\n");
@@ -69,97 +72,113 @@ void init_stock() {
     }
 }
 
+/**
+ * Handle all (n_customers) customers
+ */
 void handle_customers() {
-    int i;
+    /**
+     * ci: customer index -- local variable
+     */
+    int ci;
 
     do {
         printf("\nHow many customers do you want to handle? (Must be less than or equal to %d): ", MAX_NUMBER_OF_CUSTOMERS);
         scanf("%hu", &n_customers);
     } while (n_customers > MAX_NUMBER_OF_CUSTOMERS);
 
-    for (i=0; i < n_customers; i++) {
-        _handle_customer(i);
+    for (ci=0; ci < n_customers; ci++) {
+        _handle_customer(ci);
     }
 }
 
+/**
+ * Print a report about all orders placed by all customers
+ */
 void print_report() {
     /**
      * These are LOCAL variables. Their scope is limited to this function block.
+     * ci: customer index, moves between 0 and n_customers
+     * pi: product index, moves between 0 and n_products
+     * lci: lowest-order customer index, keeps track of the customer with the lowest order
+     * hci: highest-order customer index, keeps track of the customer with the highest order
      */
-    int customer_index, product_index, lowest_order_customer_index = 0, 
-        highest_order_customer_index = 0;
-    float grand_net_total = 0.0, grand_tax = 0.0, grand_total = 0.0, 
-        lowest_net_total_price = net_total_price[0], highest_net_total_price = net_total_price[0];
+    int ci, pi, lci = 0, hci = 0;
+    float grand_net_total = 0.0, grand_tax = 0.0, grand_total = 0.0;
 
     printf("\n*************REPORT****************\n");
-    for (customer_index=0; customer_index < n_customers; customer_index++) {
-        printf("Customer %d\n-------------------------\n", customer_index + 1);
-        for (product_index=0; product_index < n_products; product_index++) {
+
+    for (ci=0; ci < n_customers; ci++) {
+        printf("Customer %d\n-------------------------\n", ci + 1);
+        for (pi=0; pi < n_products; pi++) {
             printf("Product %d: %.2f x %d = %.2f\n", 
-                product_index + 1, price[product_index], orderd_quantity[customer_index][product_index], 
-                price[product_index] * orderd_quantity[customer_index][product_index]);
+                pi + 1, price[pi], orderd_quantity[ci][pi], 
+                price[pi] * orderd_quantity[ci][pi]);
         }
-        if (net_total_price[customer_index] < lowest_net_total_price) {
-            lowest_net_total_price = net_total_price[customer_index];
-            lowest_order_customer_index = customer_index;
-        }
-        else if (net_total_price[customer_index] > highest_net_total_price) {
-            highest_net_total_price = net_total_price[customer_index];
-            highest_order_customer_index = customer_index;
+        if (net_total_price[ci] < net_total_price[lci]) {
+            lci = ci;
+        } else if (net_total_price[ci] > net_total_price[hci]) {
+            hci = ci;
         }
         
-        grand_net_total += net_total_price[customer_index];
-        grand_tax += tax[customer_index];
-        grand_total += total_price[customer_index];
+        grand_net_total += net_total_price[ci];
+        grand_tax += tax[ci];
+        grand_total += total_price[ci];
         printf("\nNet Total Price: %.2f\nTax: %.2f\nTotal Price: %.2f\n\n", 
-                net_total_price[customer_index], tax[customer_index], 
-                total_price[customer_index]);
+                net_total_price[ci], tax[ci], 
+                total_price[ci]);
     }
+
     printf("*********Lowest-order Customer**********\n");
     printf("Customer: %d\nNet Total Price: %.2f\nTax: %.2f\nTotal Price: %.2f\n", 
-        lowest_order_customer_index + 1, net_total_price[lowest_order_customer_index], 
-        tax[lowest_order_customer_index], total_price[lowest_order_customer_index]);
+        lci + 1, net_total_price[lci], 
+        tax[lci], total_price[lci]);
     
     printf("*********Highest-order Customer**********\n");
     printf("Customer: %d\nNet Total Price: %.2f\nTax: %.2f\nTotal Price: %.2f\n", 
-        highest_order_customer_index + 1, net_total_price[highest_order_customer_index], 
-        tax[highest_order_customer_index], total_price[highest_order_customer_index]);
+        hci + 1, net_total_price[hci], 
+        tax[hci], total_price[hci]);
     
     printf("*********Grand Total**********\n");
     printf("Grand Net Total: %.2f\nGrand Tax: %.2f\nGrand Total: %.2f\n", 
         grand_net_total, grand_tax, grand_total);
     
     printf("**************STOCK************\n");
-    for (product_index=0; product_index < n_products; product_index++) {
-        printf("Product %d: %d\n", product_index + 1, quantity[product_index]);
+    for (pi=0; pi < n_products; pi++) {
+        printf("Product %d: %d\n", pi + 1, quantity[pi]);
     }
+
     printf("*******************************\n");
 }
 
-void _handle_customer(int customer_index) {
+/**
+ * Handle one customer ci
+ * ci: customer index
+ */
+void _handle_customer(int ci) {
     /**
      * These are LOCAL variables. Their scope is limited to this function block.
+     * pi: product index, moves between 0 and n_products
      */
-    int i, feedback = 1, product_index, quantity;
+    int feedback = 1, pi, quantity;
 
     /**
      * Initialize the net total price for this customer
      */
-    net_total_price[customer_index] = 0.0;
+    net_total_price[ci] = 0.0;
 
     /**
      * Initialize ordered quantities for this customer
      */
-    for (i=0; i < n_products; i++) {
-        orderd_quantity[customer_index][i] = 0;
+    for (pi=0; pi < n_products; pi++) {
+        orderd_quantity[ci][pi] = 0;
     }
 
     printf("*************Handling a new customer*************\n");
     do {
         printf("Choose a product [1 .. %d]: ", n_products);
-        scanf("%d", &product_index);
-        product_index--;
-        if (product_index < 0 || product_index >= n_products) {
+        scanf("%d", &pi);
+        pi--;
+        if (pi < 0 || pi >= n_products) {
             printf("Sorry. The selected product does not exist\n");
             continue; 
             /* a new keyword, which means, skip the rest of this iteration
@@ -171,35 +190,44 @@ void _handle_customer(int customer_index) {
          */        
         printf("Select quantity: ");
         scanf("%d", &quantity);
-        __handle_order(customer_index, product_index, quantity);
+        __handle_order(ci, pi, quantity);
         printf("\nEnter 1 to continue or any other number to stop: ");
         scanf("%d", &feedback);
     } while (feedback == 1);
 }
 
-void __handle_order(int customer_index, int product_index, 
+/**
+ * Handle one order placed by a customer ci, for a product pi
+ * ci: customer index
+ * pi: product index
+ */
+void __handle_order(int ci, int pi, 
                         unsigned short quantiy) {
-    if (product_index < 0 || product_index >= n_products) {
+    if (pi < 0 || pi >= n_products) {
         printf("Sorry. The selected product does not exist\n");
         return;
     }
    
-    if (quantiy <= quantity[product_index]) {
-        net_total_price[customer_index] += price[product_index] * quantiy;
-        quantity[product_index] -= quantiy;
-        orderd_quantity[customer_index][product_index] += quantiy;
-        ___compute_tax_and_total_price(customer_index);
+    if (quantiy <= quantity[pi]) {
+        net_total_price[ci] += price[pi] * quantiy;
+        quantity[pi] -= quantiy;
+        orderd_quantity[ci][pi] += quantiy;
+        ___compute_tax_and_total_price(ci);
     } else {
         printf("Sorry, ordered quantity is not available\n");
     }    
 }
 
-void ___compute_tax_and_total_price(int customer_index) {
+/**
+ * Compute the tax and total price for customer ci
+ * ci: customer index
+ */
+void ___compute_tax_and_total_price(int ci) {
 
-    tax[customer_index] = net_total_price[customer_index] * TAX_RATE / 100;
-    total_price[customer_index] = net_total_price[customer_index] + tax[customer_index];
+    tax[ci] = net_total_price[ci] * TAX_RATE / 100;
+    total_price[ci] = net_total_price[ci] + tax[ci];
 
-    printf("Net total price so far: %.2f\n", net_total_price[customer_index]);
-    printf("Tax so far: %.2f\n", tax[customer_index]);
-    printf("Total price so far: %.2f\n", total_price[customer_index]);
+    printf("Net total price so far: %.2f\n", net_total_price[ci]);
+    printf("Tax so far: %.2f\n", tax[ci]);
+    printf("Total price so far: %.2f\n", total_price[ci]);
 }
