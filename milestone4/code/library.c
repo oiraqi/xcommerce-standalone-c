@@ -41,8 +41,9 @@ unsigned short orderd_quantity[MAX_NUMBER_OF_CUSTOMERS][MAX_NUMBER_OF_PRODUCTS];
  * These two prototypes are for functions that are used in this file only.
  * They are not part of header.h because we do not need/want them to be used/called from outside this file.
  * We prefix them with _ as a naming convention, to remind ourselves that they are not accessible outside this file.
- * _handle_order gets called by handle_customer.
- * __compute_tax_and_total_price gets called by _handle_order.
+ * _handle_customer gets called by handle_customers.
+ * __handle_order gets called by handle_customer.
+ * ___compute_tax_and_total_price gets called by _handle_order.
  * The number of _ in the prefix gives an idea about the order/depth of the function.
  */
 void _handle_customer(int);
