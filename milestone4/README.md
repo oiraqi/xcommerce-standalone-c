@@ -1,4 +1,5 @@
-# Problem Statement
+# Milestone 4: Simple Arrays / Multi-dimensional Arrays
+## Problem Statement
 Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, after hadling all customers, Intergalactic Ltd. wants to a have a detailed report about all the placed orders. The report should show:
 - the ordered products, their respective quantities and prices, net total price, tax and total price per customer
 - the customer with the *lowest* total price, as well as the corresponding net total price, tax and total price
