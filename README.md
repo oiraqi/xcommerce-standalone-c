@@ -63,26 +63,14 @@ For each algorithm above (1.1 through 1.5):
 ## Milestone 3 (Top-down Approach / C Functions / Multi-file Programming / Partial Code Compiling)
 Now, we would like to handle *n* customers (calls), one after the other. And just like 1.5, each customer may order one or more products from the thtree-product catalog, again and again, until s/he's done. Then the operator, moves to the next customer.
 Before receiving any call, the operator must first initialize the stock by setting the price and quantity of each product.
-- Design the high-level algorithm
-- Design lower-level algorithms
-- Identify the different files that compose your C program
-- Give the content of your header file
-- Implement the main function
-- Partially compile its corresponding file as an object file
-- Implement all needed functions
-- Partially compile their corresponding file(s) as an object file
-- Compile and link all oject files to generate your executable program
-- Run and test your executable program
-
 Related material: [Top/Down Approach](https://docs.google.com/presentation/d/1MMt0wCU1iK8JAOL-SSjzq4mcDM2VQKTG3TH8Pxhirkk/edit?usp=sharing)
 
+Get to [Milestone 3 page](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone3).
+
 ## Milestone 4 (Simple Arrays / Multi-dimensional Arrays)
-Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to a have a **detailed report** about all the placed orders. The report should show:
-- the ordered products, their respective quantities and prices, net total price, tax and total price **per customer**
-- the customer with the **lowest** total price, as well as the corresponding net total price, tax and total price
-- the customer with the **highest** total price, as well as the corresponding net total price, tax and total price
-- the grand net total, the grand tax and the grand total
-- the **current** stock, i.e. the **remaining quantity** of each product.
+Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to a have a **detailed report** about all the placed orders.
+
+Get to [Milestone 4 page](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone4).
 
 ## Milestone 5 (Strings)
 Product names, customer info, order printing, name-like search...
