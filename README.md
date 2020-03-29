@@ -22,7 +22,7 @@ This project is about developing such a computer program (Telecommerce Applicati
 - [Algorithms](https://docs.google.com/presentation/d/1oe6NSNcz9tKE_XYgdV7bV7XLiNyn81HFcYLmKn1ECaw/edit?usp=sharing)
 - [Top/Down Approach](https://docs.google.com/presentation/d/1MMt0wCU1iK8JAOL-SSjzq4mcDM2VQKTG3TH8Pxhirkk/edit?usp=sharing)
 
-## Milestone 1 (Basic Specifications / Algorithms Only)
+## Milestone 1: Basic Specifications / Algorithms Only
 1.1. We start by considering a **single-product** catalog. Each customer calls and specifies the quantity of the product (the only one available) s/he wants to order. The operator shall use the Telecommerce Application to compute the total price.
 - Identify the problem input and output
 - Design the algorithm and express it as a flow chart
@@ -43,7 +43,7 @@ This project is about developing such a computer program (Telecommerce Applicati
 
 Get to [Milestone 1](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone1)
 
-## Milestone 2 (Introduction To C Programming)
+## Milestone 2: Introduction To C Programming
 *Prerequisites*
 - Git installed
 - Gcc (MinGW for Windows) installed
@@ -64,7 +64,7 @@ For each algorithm above (1.1 through 1.5):
 
 Get to [Milestone 2](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone2)
 
-## Milestone 3 (Top-down Approach / C Functions / Multi-file Programming / Partial Code Compiling)
+## Milestone 3: Top-down Approach / C Functions / Multi-file Programming / Partial Code Compiling
 Now, we would like to handle *n* customers (calls), one after the other. And just like 1.5, each customer may order one or more products from the thtree-product catalog, again and again, until s/he's done. Then the operator, moves to the next customer.
 Before receiving any call, the operator must first initialize the stock by setting the price and quantity of each product.
 
@@ -72,18 +72,19 @@ Related material: [Top/Down Approach](https://docs.google.com/presentation/d/1MM
 
 Get to [Milestone 3](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone3)
 
-## Milestone 4 (Simple Arrays / Multi-dimensional Arrays)
+## Milestone 4: Simple Arrays / Multi-dimensional Arrays
 Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to a have a **detailed report** about all the placed orders.
 
 Get to [Milestone 4](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone4)
 
-## Milestone 5 (Strings)
+## Milestone 5: Strings
 Product names, customer info, order printing, name-like search...
 
-## Milestone 6 (Pointers)
+## Milestone 6: Pointers
 
-## Milestone 7 (Encapsulation / User-defined Data Types)
+## Milestone 7: Encapsulation / User-defined Data Types
 - typedef {...} product_t;
 - typedef {...} order_t;
 
-## Milestone 8 (Order logging, files)
+## Milestone 8: Files
+Logging orders in a log file
