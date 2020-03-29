@@ -73,7 +73,7 @@ Related material: [Top/Down Approach](https://docs.google.com/presentation/d/1MM
 Get to [Milestone 3](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone3)
 
 ## Milestone 4: Simple Arrays / Multi-dimensional Arrays
-Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to a have a **detailed report** about all the placed orders.
+Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to have a **detailed report** about all the placed orders.
 
 Get to [Milestone 4](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone4)
 
