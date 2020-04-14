@@ -54,18 +54,21 @@ void ___compute_tax_and_total_price(int);
  * Initialize stock.
  */
 void init_stock() {
-    int i;
+    /**
+     * pi: product index -- local variable.
+     */
+    int pi;
     printf("*************Initializing Stock*************\n");
     do {
         printf("Enter the number of products (Must be less than or equal to %d): ", MAX_NUMBER_OF_PRODUCTS);
         scanf("%hu", &n_products);
     } while (n_products > MAX_NUMBER_OF_PRODUCTS);
     
-    for(i=0; i < n_products; i++) {
-        printf("Enter the available quantity of product %d: ", i + 1);
-        scanf("%hu", &quantity[i]);
-        printf("Enter the price of product %d: ", i + 1);
-        scanf("%f", &price[i]);
+    for(pi=0; pi < n_products; pi++) {
+        printf("Enter the available quantity of product %d: ", pi + 1);
+        scanf("%hu", &quantity[pi]);
+        printf("Enter the price of product %d: ", pi + 1);
+        scanf("%f", &price[pi]);
     }
 }
 
@@ -107,9 +110,11 @@ void print_report() {
     for (ci=0; ci < n_customers; ci++) {
         printf("Customer %d\n-------------------------\n", ci + 1);
         for (pi=0; pi < n_products; pi++) {
-            printf("Product %d: %.2f x %d = %.2f\n", 
-                pi + 1, price[pi], orderd_quantity[ci][pi], 
-                price[pi] * orderd_quantity[ci][pi]);
+            if (orderd_quantity[ci][pi] > 0) {
+                printf("Product %d: %.2f x %d = %.2f\n", 
+                    pi + 1, price[pi], orderd_quantity[ci][pi], 
+                    price[pi] * orderd_quantity[ci][pi]);
+            }
         }
         if (net_total_price[ci] < net_total_price[lci]) {
             lci = ci;
