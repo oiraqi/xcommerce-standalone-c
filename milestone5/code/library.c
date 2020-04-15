@@ -41,6 +41,10 @@ tax[MAX_NUMBER_OF_CUSTOMERS], total_price[MAX_NUMBER_OF_CUSTOMERS];
  */
 unsigned short orderd_quantity[MAX_NUMBER_OF_CUSTOMERS][MAX_NUMBER_OF_PRODUCTS];
 
+/**
+ * Each one of these variables is an array of strings.
+ * Each string is itself an array of characters, delimited by '\0'.
+ */
 char product_name[MAX_NUMBER_OF_PRODUCTS][MAX_PRODUCT_NAME_LENGTH], 
     customer_name[MAX_NUMBER_OF_CUSTOMERS][MAX_CUSTOMER_NAME_LENGTH], 
     customer_shipping_address[MAX_NUMBER_OF_CUSTOMERS][MAX_CUSTOMER_SHIPPING_ADDRESS_LENGTH];
@@ -75,7 +79,8 @@ void init_stock() {
     
     for(pi=0; pi < n_products; pi++) {
         printf("Enter the name of product %d: ", pi + 1);
-        scanf("%s", product_name[pi]);
+        getchar();
+        fgets(product_name[pi], MAX_PRODUCT_NAME_LENGTH, stdin);
         printf("Enter the available quantity of product %d: ", pi + 1);
         scanf("%hu", &quantity[pi]);
         printf("Enter the price of product %d: ", pi + 1);
@@ -192,14 +197,18 @@ void _handle_customer(int ci) {
     printf("*************Handling a new customer*************\n");
 
     printf("Enter the name of customer %d: ", ci + 1);
-    scanf("%s", customer_name[ci]);
+    getchar();
+    fgets(customer_name[ci], MAX_CUSTOMER_NAME_LENGTH, stdin);
 
     printf("Enter the shipping address of customer %d: ", ci + 1);
-    scanf("%s", customer_shipping_address[ci]);
+    getchar();
+    fgets(customer_shipping_address[ci], MAX_CUSTOMER_SHIPPING_ADDRESS_LENGTH, stdin);
 
     do {
         printf("Specify (first) part of the product name for partial matching: ");
-        scanf("%s", keyword);
+        getchar();
+        fgets(keyword, MAX_PRODUCT_NAME_LENGTH, stdin);
+        printf("%s\n", keyword);
         number_of_results = __search_for_products(keyword, search_results);
         if (!number_of_results) {
             printf("Sorry. No product found\n");
@@ -249,6 +258,12 @@ void __handle_order(int ci, int pi,
         printf("Sorry, ordered quantity is not available\n");
     }    
 }
+
+/**
+ * Search for products whose name start with the given keyword.
+ * The indices of matching products are put in search_results array.
+ * The number of results is returned.
+ */
 
 int __search_for_products(char keyword[], int search_results[]) {
     int pi, number_of_results = 0;
