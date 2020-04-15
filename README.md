@@ -75,10 +75,12 @@ Get to [Milestone 3](https://github.com/oiraqi/xcommerce-standalone-c/tree/maste
 ## Milestone 4: Simple Arrays / Multi-dimensional Arrays
 Here, we will no more be bound to just three products. We will consider a multi-product catalog, i.e., a catalog that can contain any number of products. Moreover, **after** hadling all customers, Intergalactic Ltd. wants to have a **detailed report** about all the placed orders.
 
-Get to [Milestone 4](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone4)
+Go to [Milestone 4](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone4)
 
 ## Milestone 5: Strings
 In this milestone, we add product names, customer names, as well as customer shipping addresses. Also, instead of specifying the product index, customers will specify the product name. The operator shall be able to list corresponding products based on same-start partial matching (e.g. sam and samsung match partially).
+
+Go to [Milestone 5](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone5)
 
 ## Milestone 6: Pointers
 
