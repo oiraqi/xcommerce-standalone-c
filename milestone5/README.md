@@ -6,7 +6,7 @@ In this milestone, we add product names, customer names, as well as customer shi
 - The limitations of scanf("%s", my_string), when inputing strings from the end user
 - How gets(my_string) addresses those limitations, but creates security issues
 - How fgets(my_string, SIZE, stdin) is the best option to get strings from the end user
-- The need for getcher() 
+- The need for getchar() 
 
 Given these new requirements:
 - Enhance your code, by leveraging **strings**
