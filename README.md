@@ -78,7 +78,7 @@ Here, we will no more be bound to just three products. We will consider a multi-
 Get to [Milestone 4](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone4)
 
 ## Milestone 5: Strings
-Product names, customer info, order printing, name-like search...
+In this milestone, we add product names, customer names, as well as customer shipping addresses. Also, instead of specifying the product index, customers will specify the product name. The operator shall be able to list corresponding products based on same-start partial matching (e.g. sam and samsung match partially).
 
 ## Milestone 6: Pointers
 
