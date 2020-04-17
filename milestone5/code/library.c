@@ -125,6 +125,8 @@ void print_report() {
 
     for (ci=0; ci < n_customers; ci++) {
         printf("Customer %d\n-------------------------\n", ci + 1);
+        printf("Name: %s\n", customer_name[ci]);
+        printf("Shipping address: %s\n", customer_shipping_address[ci]);
         for (pi=0; pi < n_products; pi++) {
             if (orderd_quantity[ci][pi] > 0) {
                 printf("Product %d: %.2f x %d = %.2f\n", 
@@ -261,6 +263,7 @@ void __handle_order(int ci, int pi,
 
 /**
  * Search for products whose name start with the given keyword.
+ * Uses strncmp from string.h.
  * The indices of matching products are put in search_results array.
  * The number of results is returned.
  */
