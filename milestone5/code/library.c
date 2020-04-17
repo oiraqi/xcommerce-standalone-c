@@ -164,7 +164,7 @@ void print_report() {
     
     printf("**************STOCK************\n");
     for (pi=0; pi < n_products; pi++) {
-        printf("Product %d: %d\n", pi + 1, quantity[pi]);
+        printf("Product %d - %s: %d\n", pi + 1, product_name[pi], quantity[pi]);
     }
 
     printf("*******************************\n");
