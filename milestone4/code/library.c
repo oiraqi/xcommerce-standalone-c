@@ -30,7 +30,10 @@ float price[MAX_NUMBER_OF_PRODUCTS], net_total_price[MAX_NUMBER_OF_CUSTOMERS],
 tax[MAX_NUMBER_OF_CUSTOMERS], total_price[MAX_NUMBER_OF_CUSTOMERS];
 
 /**
- * 
+ * ordered_quantity is a two-dimensional array of unsigned short elements.
+ * It represents the quantity ordered of each product by each customer.
+ * It is like a matrix with MAX_NUMBER_OF_CUSTOMERS lines and MAX_NUMBER_OF_PRODUCTS columns.
+ * orderd_quantity[ci][pi] represents the quantity ordered of product pi by customer ci.
  */
 unsigned short orderd_quantity[MAX_NUMBER_OF_CUSTOMERS][MAX_NUMBER_OF_PRODUCTS];
 
