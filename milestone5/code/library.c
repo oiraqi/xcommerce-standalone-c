@@ -62,6 +62,7 @@ void _handle_customer(int);
 void __handle_order(int, int, unsigned short);
 int __search_for_products(char[], int[]);
 void ___compute_tax_and_total_price(int);
+char* _gets(char*, long);
 
 /**
  * Initialize stock.
@@ -80,7 +81,7 @@ void init_stock() {
     for(pi=0; pi < n_products; pi++) {
         printf("Enter the name of product %d: ", pi + 1);
         getchar();
-        fgets(product_name[pi], MAX_PRODUCT_NAME_LENGTH, stdin);
+        _gets(product_name[pi], MAX_PRODUCT_NAME_LENGTH);
         printf("Enter the available quantity of product %d: ", pi + 1);
         scanf("%hu", &quantity[pi]);
         printf("Enter the price of product %d: ", pi + 1);
@@ -200,16 +201,15 @@ void _handle_customer(int ci) {
 
     printf("Enter the name of customer %d: ", ci + 1);
     getchar();
-    fgets(customer_name[ci], MAX_CUSTOMER_NAME_LENGTH, stdin);
+    _gets(customer_name[ci], MAX_CUSTOMER_NAME_LENGTH);
 
     printf("Enter the shipping address of customer %d: ", ci + 1);
     getchar();
-    fgets(customer_shipping_address[ci], MAX_CUSTOMER_SHIPPING_ADDRESS_LENGTH, stdin);
+    _gets(customer_shipping_address[ci], MAX_CUSTOMER_SHIPPING_ADDRESS_LENGTH);
 
     do {
         printf("Specify (first) part of the product name for partial matching: ");
-        getchar();
-        fgets(keyword, MAX_PRODUCT_NAME_LENGTH, stdin);
+        _gets(keyword, MAX_PRODUCT_NAME_LENGTH);
         printf("%s\n", keyword);
         number_of_results = __search_for_products(keyword, search_results);
         if (!number_of_results) {
@@ -289,4 +289,11 @@ void ___compute_tax_and_total_price(int ci) {
     printf("Net total price so far: %.2f\n", net_total_price[ci]);
     printf("Tax so far: %.2f\n", tax[ci]);
     printf("Total price so far: %.2f\n", total_price[ci]);
+}
+
+char* _gets(char *s, long max) {
+    char *result = fgets(s, max, stdin);
+    if (result)
+        s[strlen(s) - 1] = '\0'; /* to get rid of '\n' */
+    return s;
 }
