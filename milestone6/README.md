@@ -1,4 +1,4 @@
-# Milestone 5: Pointers and Files
+# Milestone 6: Pointers and Files
 ## Problem Statement
 In this milestone, we add the capability of printing the report into a file.
 
