@@ -122,6 +122,11 @@ void print_report() {
      */
     int ci, pi, lci = 0, hci = 0;
     float grand_net_total = 0.0, grand_tax = 0.0, grand_total = 0.0;
+    /**
+     * Let's open a file for writing.
+     * We shouldn't forget to close it once done.
+     * fout represents our gateway to the open file.
+     */
     FILE *fout = fopen("report.txt", "w");
 
     fputs("\n*************REPORT****************\n", fout);
@@ -171,6 +176,10 @@ void print_report() {
     }
 
     fputs("*******************************", fout);
+
+    /**
+     * Let's close the file as promised!
+     */
     fclose(fout);
 }
 
