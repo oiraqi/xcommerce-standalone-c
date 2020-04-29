@@ -110,9 +110,11 @@ void print_report() {
     for (ci=0; ci < n_customers; ci++) {
         printf("Customer %d\n-------------------------\n", ci + 1);
         for (pi=0; pi < n_products; pi++) {
-            printf("Product %d: %.2f x %d = %.2f\n", 
-                pi + 1, price[pi], orderd_quantity[ci][pi], 
-                price[pi] * orderd_quantity[ci][pi]);
+            if (orderd_quantity[ci][pi] > 0) {
+                printf("Product %d: %.2f x %d = %.2f\n", 
+                    pi + 1, price[pi], orderd_quantity[ci][pi], 
+                    price[pi] * orderd_quantity[ci][pi]);
+            }
         }
         if (net_total_price[ci] < net_total_price[lci]) {
             lci = ci;
