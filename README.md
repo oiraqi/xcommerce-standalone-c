@@ -85,6 +85,8 @@ Go to [Milestone 5](https://github.com/oiraqi/xcommerce-standalone-c/tree/master
 ## Milestone 6: Pointers and Files
 In this milestone, we add the capability of printing the report into a file.
 
+Go to [Milestone 6](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone6)
+
 ## Milestone 7: Encapsulation / User-defined Data Types
 - typedef struct {...} customer_t;
 - typedef struct {...} product_t;
