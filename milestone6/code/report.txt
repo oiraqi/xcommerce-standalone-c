@@ -1,0 +1,34 @@
+
+*************REPORT****************
+Customer 1
+-------------------------
+Name: John
+Shipping address: 22
+Product 1: 3000.00 x 2 = 6000.00
+
+Net Total Price: 6000.00
+Tax: 1200.00
+Total Price: 7200.00
+
+
+*********Lowest-order Customer**********
+Customer: 1
+Net Total Price: 6000.00
+Tax: 1200.00
+Total Price: 7200.00
+
+*********Highest-order Customer**********
+Customer: 1
+Net Total Price: 6000.00
+Tax: 1200.00
+Total Price: 7200.00
+
+*********Grand Total**********
+Grand Net Total: 6000.00
+Grand Tax: 1200.00
+Grand Total: 7200.00
+
+**************STOCK************
+Product 1 - OPPO: 3
+Product 2 - Samsung: 5
+*******************************

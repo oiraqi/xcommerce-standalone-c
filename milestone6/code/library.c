@@ -62,6 +62,7 @@ void _handle_customer(int);
 void __handle_order(int, int, unsigned short);
 int __search_for_products(char[], int[]);
 void ___compute_tax_and_total_price(int);
+char* _gets(char*, long);
 
 /**
  * Initialize stock.
@@ -80,7 +81,8 @@ void init_stock() {
     for(pi=0; pi < n_products; pi++) {
         printf("Enter the name of product %d: ", pi + 1);
         getchar();
-        fgets(product_name[pi], MAX_PRODUCT_NAME_LENGTH, stdin);
+        _gets(product_name[pi], MAX_PRODUCT_NAME_LENGTH);
+        printf("%s\n", product_name[pi]);
         printf("Enter the available quantity of product %d: ", pi + 1);
         scanf("%hu", &quantity[pi]);
         printf("Enter the price of product %d: ", pi + 1);
@@ -120,16 +122,17 @@ void print_report() {
      */
     int ci, pi, lci = 0, hci = 0;
     float grand_net_total = 0.0, grand_tax = 0.0, grand_total = 0.0;
+    FILE *fout = fopen("report.txt", "w");
 
-    printf("\n*************REPORT****************\n");
+    fputs("\n*************REPORT****************\n", fout);
 
     for (ci=0; ci < n_customers; ci++) {
-        printf("Customer %d\n-------------------------\n", ci + 1);
-        printf("Name: %s\n", customer_name[ci]);
-        printf("Shipping address: %s\n", customer_shipping_address[ci]);
+        fprintf(fout, "Customer %d\n-------------------------\n", ci + 1);
+        fprintf(fout, "Name: %s\n", customer_name[ci]);
+        fprintf(fout, "Shipping address: %s\n", customer_shipping_address[ci]);
         for (pi=0; pi < n_products; pi++) {
             if (orderd_quantity[ci][pi] > 0) {
-                printf("Product %d: %.2f x %d = %.2f\n", 
+                fprintf(fout, "Product %d: %.2f x %d = %.2f\n", 
                     pi + 1, price[pi], orderd_quantity[ci][pi], 
                     price[pi] * orderd_quantity[ci][pi]);
             }
@@ -143,31 +146,32 @@ void print_report() {
         grand_net_total += net_total_price[ci];
         grand_tax += tax[ci];
         grand_total += total_price[ci];
-        printf("\nNet Total Price: %.2f\nTax: %.2f\nTotal Price: %.2f\n\n", 
+        fprintf(fout, "\nNet Total Price: %.2f\nTax: %.2f\nTotal Price: %.2f\n\n", 
                 net_total_price[ci], tax[ci], 
                 total_price[ci]);
     }
 
-    printf("*********Lowest-order Customer**********\n");
-    printf("Customer: %d\nNet Total Price: %.2f\nTax: %.2f\nTotal Price: %.2f\n", 
+    fputs("\n*********Lowest-order Customer**********\n", fout);
+    fprintf(fout, "Customer: %d\nNet Total Price: %.2f\nTax: %.2f\nTotal Price: %.2f\n", 
         lci + 1, net_total_price[lci], 
         tax[lci], total_price[lci]);
     
-    printf("*********Highest-order Customer**********\n");
-    printf("Customer: %d\nNet Total Price: %.2f\nTax: %.2f\nTotal Price: %.2f\n", 
+    fputs("\n*********Highest-order Customer**********\n", fout);
+    fprintf(fout, "Customer: %d\nNet Total Price: %.2f\nTax: %.2f\nTotal Price: %.2f\n", 
         hci + 1, net_total_price[hci], 
         tax[hci], total_price[hci]);
     
-    printf("*********Grand Total**********\n");
-    printf("Grand Net Total: %.2f\nGrand Tax: %.2f\nGrand Total: %.2f\n", 
+    fputs("\n*********Grand Total**********\n", fout);
+    fprintf(fout, "Grand Net Total: %.2f\nGrand Tax: %.2f\nGrand Total: %.2f\n", 
         grand_net_total, grand_tax, grand_total);
     
-    printf("**************STOCK************\n");
+    fprintf(fout, "\n**************STOCK************\n");
     for (pi=0; pi < n_products; pi++) {
-        printf("Product %d - %s: %d\n", pi + 1, product_name[pi], quantity[pi]);
+        fprintf(fout, "Product %d - %s: %d\n", pi + 1, product_name[pi], quantity[pi]);
     }
 
-    printf("*******************************\n");
+    fputs("*******************************", fout);
+    fclose(fout);
 }
 
 /**
@@ -200,16 +204,16 @@ void _handle_customer(int ci) {
 
     printf("Enter the name of customer %d: ", ci + 1);
     getchar();
-    fgets(customer_name[ci], MAX_CUSTOMER_NAME_LENGTH, stdin);
+    _gets(customer_name[ci], MAX_CUSTOMER_NAME_LENGTH);
 
     printf("Enter the shipping address of customer %d: ", ci + 1);
     getchar();
-    fgets(customer_shipping_address[ci], MAX_CUSTOMER_SHIPPING_ADDRESS_LENGTH, stdin);
+    _gets(customer_shipping_address[ci], MAX_CUSTOMER_SHIPPING_ADDRESS_LENGTH);
 
     do {
         printf("Specify (first) part of the product name for partial matching: ");
-        getchar();
-        fgets(keyword, MAX_PRODUCT_NAME_LENGTH, stdin);
+        //getchar();
+        _gets(keyword, MAX_PRODUCT_NAME_LENGTH);
         printf("%s\n", keyword);
         number_of_results = __search_for_products(keyword, search_results);
         if (!number_of_results) {
@@ -289,4 +293,11 @@ void ___compute_tax_and_total_price(int ci) {
     printf("Net total price so far: %.2f\n", net_total_price[ci]);
     printf("Tax so far: %.2f\n", tax[ci]);
     printf("Total price so far: %.2f\n", total_price[ci]);
+}
+
+char* _gets(char *s, long max) {
+    char *result = fgets(s, max, stdin);
+    if (result)
+        s[strlen(s) - 1] = '\0'; /* to get rid of '\n' */
+    return s;
 }
