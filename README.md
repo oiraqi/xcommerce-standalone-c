@@ -82,11 +82,10 @@ In this milestone, we add product names, customer names, as well as customer shi
 
 Go to [Milestone 5](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone5)
 
-## Milestone 6: Pointers
+## Milestone 6: Pointers and Files
+In this milestone, we add the capability of printing the report into a file.
 
 ## Milestone 7: Encapsulation / User-defined Data Types
-- typedef {...} product_t;
-- typedef {...} order_t;
-
-## Milestone 8: Files
-Logging orders in a log file
+- typedef struct {...} customer_t;
+- typedef struct {...} product_t;
+- typedef struct {...} order_t;
