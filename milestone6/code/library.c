@@ -50,7 +50,7 @@ char product_name[MAX_NUMBER_OF_PRODUCTS][MAX_PRODUCT_NAME_LENGTH],
     customer_shipping_address[MAX_NUMBER_OF_CUSTOMERS][MAX_CUSTOMER_SHIPPING_ADDRESS_LENGTH];
 
 /**
- * These two prototypes are for functions that are used in this file only.
+ * These prototypes are for functions that are used in this file only.
  * They are not part of header.h because we do not need/want them to be used/called from outside this file.
  * We prefix them with _ as a naming convention, to remind ourselves that they are not accessible outside this file.
  * _handle_customer gets called by handle_customers.
