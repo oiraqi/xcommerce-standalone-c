@@ -38,7 +38,7 @@ tax[MAX_NUMBER_OF_CUSTOMERS], total_price[MAX_NUMBER_OF_CUSTOMERS];
 unsigned short orderd_quantity[MAX_NUMBER_OF_CUSTOMERS][MAX_NUMBER_OF_PRODUCTS];
 
 /**
- * These two prototypes are for functions that are used in this file only.
+ * These prototypes are for functions that are used in this file only.
  * They are not part of header.h because we do not need/want them to be used/called from outside this file.
  * We prefix them with _ as a naming convention, to remind ourselves that they are not accessible outside this file.
  * _handle_customer gets called by handle_customers.
