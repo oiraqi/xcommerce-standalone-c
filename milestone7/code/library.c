@@ -178,9 +178,7 @@ void _handle_order(order_t *order) {
     int feedback = 1, pi, q;
 
     char keyword[MAX_PRODUCT_NAME_LENGTH];
-    int number_of_results;
     quantified_product_t *qp;
-    quantified_product_t **search_results;
 
     order->customer = (customer_t *)malloc(sizeof(customer_t));
 
@@ -213,7 +211,6 @@ void _handle_order(order_t *order) {
         //getchar();
         _gets(keyword, MAX_PRODUCT_NAME_LENGTH);
         printf("%s\n", keyword);
-        search_results = (quantified_product_t **)malloc(n_products * sizeof(quantified_product_t *));
         __search_for_products(keyword);
         printf("Select product index: ");
         scanf("%d", &pi);
