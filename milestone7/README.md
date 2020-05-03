@@ -1,6 +1,6 @@
 # Milestone 7: User-defined Data Types
 ## Problem Statement
-In this milestone, we enhance the code using encapsulation through user-defined data types. We also use dynamic memory allocation extensively.s
+In this milestone, we enhance the code using encapsulation through user-defined data types. We also use dynamic memory allocation extensively.
 
 ## Need To Know / Read About
 - typedef struct
