@@ -88,6 +88,9 @@ In this milestone, we add the capability of printing the report into a file.
 Go to [Milestone 6](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone6)
 
 ## Milestone 7: Encapsulation / User-defined Data Types
+In this milestone, we enhance the code using encapsulation through user-defined data types. We also use dynamic memory allocation extensively.
 - typedef struct {...} customer_t;
 - typedef struct {...} product_t;
 - typedef struct {...} order_t;
+
+Go to [Milestone 7](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone7)
