@@ -1,0 +1,33 @@
+
+*************REPORT****************
+Customer 1
+-------------------------
+Name: John
+Shipping address: 22
+Product 1: 2500.00 x 2 = 5000.00
+Product 2: 6000.00 x 2 = 12000.00
+
+Net Total Price: 17000.00
+Tax: 3400.00
+Total Price: 20400.00
+
+Customer 2
+-------------------------
+Name: Ahmad
+Shipping address: 22
+Product 2: 6000.00 x 1 = 6000.00
+
+Net Total Price: 6000.00
+Tax: 1200.00
+Total Price: 7200.00
+
+
+*********Grand Total**********
+Grand Net Total: 23000.00
+Grand Tax: 4600.00
+Grand Total: 27600.00
+
+**************STOCK************
+Product 1 - OPPO: 3
+Product 2 - Samsung: 2
+*******************************
