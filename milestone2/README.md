@@ -18,7 +18,7 @@ For each algorithm above (1.1 through 1.5):
 - Share it
 
 ## Exercise 2.1
-We consider the same problem statement as in [Exercise 1.1](https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone1#exercise-11)
+We consider the same problem statement as in Exercise 1.1[https://github.com/oiraqi/xcommerce-standalone-c/tree/master/milestone1#exercise-11]
 - Identify all preprocessor directives and explain the purpose of each one
 - Write the c program using VS Code
 - Compile it using gcc
