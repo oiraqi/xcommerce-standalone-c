@@ -28,6 +28,12 @@ We add now a **constraint**. When the customer calls and specifies the quantity 
   <img src="images/TCA_1_3.png">
 </p>
 
+## Exercise
+We define a new **constraint**. When the ordered quantity is more than 5 and assuming it is available, a discount of 10% is granted.
+- Identify all problem constants so far
+- Enhance the previous algorithm to take into account the new specification
+- Implement and test your algorithm on Raptor
+
 ## 1.4
 We consider now a **three-produc**t catalog. Each product has its own price. A customer can call and specify one (and only one) product to order, along with the desired quantity. The operator shall use the Telecommerce Application to compute the total price, as well as the VAT if and only if the ordered quantity of the selected product is available, or give an error message otherwise ("Ordered quantity uavailable").
 - Identify the problem input and output
