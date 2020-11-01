@@ -28,19 +28,26 @@ We add now a **constraint**. When the customer calls and specifies the quantity 
   <img src="images/TCA_1_3.png">
 </p>
 
-## Exercise
-We define a new **constraint**. When the ordered quantity is more than 5 and assuming it is available, a discount of 10% is granted.
+## Exercise 1.1
+We define a new **constraint**. When the ordered quantity is equal or more than 5 and assuming it is available, a discount of 10% is granted.
 - Identify all problem constants so far
 - Enhance the previous algorithm to take into account the new specification
 - Implement and test your algorithm on Raptor
 
 ## 1.4
-We consider now a **three-produc**t catalog. Each product has its own price. A customer can call and specify one (and only one) product to order, along with the desired quantity. The operator shall use the Telecommerce Application to compute the total price, as well as the VAT if and only if the ordered quantity of the selected product is available, or give an error message otherwise ("Ordered quantity uavailable").
+We consider now a **three-product** catalog. Each product has its own price. A customer can call and specify one (and only one) product to order, along with the desired quantity. The operator shall use the Telecommerce Application to compute the total price, as well as the VAT if and only if the ordered quantity of the selected product is available, or give an error message otherwise ("Ordered quantity uavailable").
 - Identify the problem input and output
 - Design the algorithm and express it as a flow chart
 <p align="center">
   <img src="images/TCA_1_4.png">
 </p>
+
+## Exercise 1.2
+Still considering a **three-product** catalog, a 10% discount will be offered when the ordered quantity is equal or more than 5, 15% if it is equal or more than 10 and 20% if it is equal or more than 15.
+- Identify all problem constants so far
+- Identify the problem input and output
+- Design the algorithm and express it as a flow chart
+- Implement and and test your algorithm on Raptor
 
 ## 1.5
 We still consider a three-product catalog. However, a customer may call and specify one or more products to order, along with their respective quantities. The customer can specify the same product many times, e.g. 3 x Product1, then 2 x Product2, then 1 x Product1.

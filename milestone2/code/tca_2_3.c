@@ -56,9 +56,9 @@ int main()
     printf("Price: ");
     /* Input the price from the user, %f is used because price is a float */
     scanf("%f", &price);
-    /* Output to the user that s/he should enter the quantiy */
+    /* Output to the user that s/he should enter the quantity */
     printf("Ordered quantity: ");
-    /* Input the quantiy from the user
+    /* Input the quantity from the user
      * %hu: h for half int, u for unsigned
      */
     scanf("%hu", &quantity);

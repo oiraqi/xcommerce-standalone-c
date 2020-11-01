@@ -75,30 +75,30 @@ void handle_customer() {
  * index: ordered product.
  * quantity: ordered quantity.
  */
-void _handle_order(unsigned short index, unsigned short quantiy) {
+void _handle_order(unsigned short index, unsigned short quantity) {
     switch (index) {
         case 1:
-            if (quantiy <= qa1) {
-                net_total_price += price1 * quantiy;
-                qa1 -= quantiy;
+            if (quantity <= qa1) {
+                net_total_price += price1 * quantity;
+                qa1 -= quantity;
                 __compute_tax_and_total_price();
             } else {
                 printf("Sorry, ordered quantity is not available\n");
             }
         break;
         case 2:
-            if (quantiy <= qa2) {
-                net_total_price += price2 * quantiy;
-                qa2 -= quantiy;
+            if (quantity <= qa2) {
+                net_total_price += price2 * quantity;
+                qa2 -= quantity;
                 __compute_tax_and_total_price();
             } else {
                 printf("Sorry, ordered quantity is not available\n");
             }
         break;
         case 3:
-            if (quantiy <= qa3) {
-                net_total_price += price1 * quantiy;
-                qa3 -= quantiy;
+            if (quantity <= qa3) {
+                net_total_price += price1 * quantity;
+                qa3 -= quantity;
                 __compute_tax_and_total_price();
             } else {
                 printf("Sorry, ordered quantity is not available\n");

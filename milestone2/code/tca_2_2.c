@@ -29,9 +29,9 @@ int main() {
     printf("Price: ");
     /* Input the price from the user, %f is used because price is a float */
     scanf("%f", &price);
-    /* Output to the user that s/he should enter the quantiy */
+    /* Output to the user that s/he should enter the quantity */
     printf("Quantity: ");
-    /* Input the quantiy from the user, %d is used because quantity is a decimal (an integer) */
+    /* Input the quantity from the user, %d is used because quantity is a decimal (an integer) */
     scanf("%d", &quantity);
 
     net_total_price = price * quantity;

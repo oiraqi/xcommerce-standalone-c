@@ -67,7 +67,7 @@ int main()
         printf("Select product (1, 2, 3): ");
         scanf("%hu", &index);
 
-        /* Output to the user that s/he should enter the quantiy */
+        /* Output to the user that s/he should enter the quantity */
         printf("Ordered quantity: ");
         scanf("%hu", &quantity);
 

@@ -41,7 +41,7 @@ int main() {
      * 
      * Variables must be declared before being used in the rest of the program.
      * Variable declaration consists of specifying its type and name.
-     * Ex. int quantiy;
+     * Ex. int quantity;
      * Variables of the same type can be declared on the same line, separated by a comma.
      * Ex. float price, total_price;
      */
@@ -50,9 +50,9 @@ int main() {
     printf("Price: ");
     /* Input the price from the user, %f is used because price is a float */
     scanf("%f", &price);
-    /* Output to the user that s/he should enter the quantiy */
-    printf("Quantiy: ");
-    /* Input the quantiy from the user, %d is used because quantity is a decimal (an integer) */
+    /* Output to the user that s/he should enter the quantity */
+    printf("Quantity: ");
+    /* Input the quantity from the user, %d is used because quantity is a decimal (an integer) */
     scanf("%d", &quantity);
 
     /**
